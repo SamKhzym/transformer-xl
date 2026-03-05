@@ -9,9 +9,11 @@ import time
 from absl import flags
 import absl.logging as _logging  # pylint: disable=unused-import
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import model
 import data_utils
+
+tf.disable_eager_execution()
 
 from gpu_utils import assign_to_gpu, average_grads_and_vars
 
@@ -418,14 +420,19 @@ def evaluate(n_token, cutoffs, ps_device):
 
   saver = tf.train.Saver()
 
-  with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
+  config = tf.ConfigProto(allow_soft_placement=True)
+  config.gpu_options.allow_growth = True
+  
+  print('================== yeah im right here ===================')
+
+  with tf.Session(config=config) as sess:
     sess.run(tf.global_variables_initializer())
 
     if FLAGS.eval_ckpt_path is None:
       eval_ckpt_path = tf.train.latest_checkpoint(FLAGS.model_dir)
     else:
       eval_ckpt_path = FLAGS.eval_ckpt_path
-    tf.logging.info("Evaluate {}".format(eval_ckpt_path))
+    tf.compat.v1.logging.info("Evaluate {}".format(eval_ckpt_path))
     saver.restore(sess, eval_ckpt_path)
 
     fetches = [loss, tower_new_mems, tf.size(label_feed)]

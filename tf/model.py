@@ -1,4 +1,5 @@
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+import tensorflow as tf2
 
 
 def positional_embedding(pos_seq, inv_freq, bsz=None):
@@ -24,7 +25,9 @@ def positionwise_FF(inp, d_model, d_inner, dropout, kernel_initializer,
                              name='layer_2')
     output = tf.layers.dropout(output, dropout, training=is_training,
                                name='drop_2')
-    output = tf.contrib.layers.layer_norm(output + inp, begin_norm_axis=-1)
+    
+    norma = tf2.keras.layers.LayerNormalization(axis=-1)
+    output = norma(output + inp)
   return output
 
 
@@ -88,7 +91,8 @@ def rel_multihead_attn(w, r, r_w_bias, r_r_bias, attn_mask, mems, d_model,
                                kernel_initializer=kernel_initializer, name='o')
     attn_out = tf.layers.dropout(attn_out, dropout, training=is_training)
 
-    output = tf.contrib.layers.layer_norm(attn_out + w, begin_norm_axis=-1)
+    norma = tf2.keras.layers.LayerNormalization(axis=-1)
+    output = norma(attn_out + w)
   return output
 
 

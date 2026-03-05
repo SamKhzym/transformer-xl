@@ -14,12 +14,12 @@ import multiprocessing as mp
 import numpy as np
 
 from absl import flags
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from vocabulary import Vocab
 
-from tensorflow.gfile import Exists as exists
-from tensorflow.gfile import MakeDirs as makedirs
-from tensorflow.gfile import Glob as glob
+from tensorflow.compat.v1.gfile import Exists as exists
+from tensorflow.compat.v1.gfile import MakeDirs as makedirs
+from tensorflow.compat.v1.gfile import Glob as glob
 
 
 def _preprocess(shard, train, vocab, save_dir, cutoffs, bin_sizes, bsz, tgt_len,
@@ -252,7 +252,7 @@ def create_ordered_tfrecords(save_dir, basename, data, batch_size, tgt_len,
         basename, batch_size, tgt_len)
 
   save_path = os.path.join(save_dir, file_name)
-  record_writer = tf.python_io.TFRecordWriter(save_path)
+  record_writer = tf.compat.v1.python_io.TFRecordWriter(save_path)
 
   batched_data = batchify(data, batch_size, num_passes)
 
@@ -583,4 +583,4 @@ if __name__ == "__main__":
   flags.DEFINE_bool("use_tpu", True,
         help="use tpu")
 
-  tf.app.run(main)
+  tf.compat.v1.app.run(main)
