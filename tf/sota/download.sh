@@ -2,7 +2,7 @@
 
 URL=http://curtis.ml.cmu.edu/datasets/pretrained_xl
 
-DATA_ROOT=./
+DATA_ROOT=/home/sam/data/mcmaster/masters/classes/cas_732/project/transformer-xl/tf/data
 
 function download () {
   fileurl=${1}

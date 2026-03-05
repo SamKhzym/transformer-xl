@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Data
-DATA_ROOT=./
+DATA_ROOT=/transformer-xl/tf/transformer-xl/tf/data
 DATA_DIR=${DATA_ROOT}/pretrained_xl/tf_enwik8/data
 MODEL_DIR=${DATA_ROOT}/pretrained_xl/tf_enwik8/model
 
@@ -19,12 +19,12 @@ TEST_MEM_LEN=3800
 TEST_CLAMP_LEN=1000
 
 TEST_CKPT_PATH=${MODEL_DIR}/model.ckpt-0
-TEST_BSZ=16
-TEST_NUM_CORE=2
+TEST_BSZ=8
+TEST_NUM_CORE=1
 
 
 echo 'Preprocess test set...'
-python data_utils.py \
+python2.7 data_utils.py \
   --data_dir=${DATA_DIR}/ \
   --dataset=enwik8 \
   --tgt_len=${TEST_TGT_LEN} \
@@ -33,7 +33,7 @@ python data_utils.py \
   --use_tpu=False
 
 echo 'Run evaluation on test set...'
-python train_gpu.py \
+python2.7 train_gpu.py \
     --data_dir=${DATA_DIR}/tfrecords \
     --record_info_dir=${DATA_DIR}/tfrecords/ \
     --corpus_info_path=${DATA_DIR}/corpus-info.json \
