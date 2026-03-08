@@ -442,7 +442,7 @@ def evaluate(n_token, cutoffs, ps_device):
 
     total_loss, total_cnt = 0, 0
     for step in range(num_batch):
-      if step % (num_batch // 10) == 0:
+      if step % (num_batch // 100) == 0:
         tf.logging.info(format_str.format(step, num_batch))
 
       feed_dict = {}
@@ -455,6 +455,11 @@ def evaluate(n_token, cutoffs, ps_device):
       loss_np, tower_mems_np, cnt_np = fetched[:3]
       total_loss += loss_np * cnt_np
       total_cnt += cnt_np
+      
+      avg_loss = total_loss / total_cnt
+      
+      tf.logging.info("| loss {:.2f} | pplx {:>7.2f}, bpc {:>7.4f}".format(
+        avg_loss, math.exp(avg_loss), avg_loss / math.log(2)))
 
     avg_loss = total_loss / total_cnt
     tf.logging.info("| loss {:.2f} | pplx {:>7.2f}, bpc {:>7.4f}".format(

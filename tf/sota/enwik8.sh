@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Data
-DATA_ROOT=/transformer-xl/tf/transformer-xl/tf/data
+DATA_ROOT=/transformer-xl/transformer-xl/tf/data
+# DATA_ROOT=/mnt/data/Data/mcmaster/masters/classes/cas_732/project/transformer-xl/tf/data
 DATA_DIR=${DATA_ROOT}/pretrained_xl/tf_enwik8/data
 MODEL_DIR=${DATA_ROOT}/pretrained_xl/tf_enwik8/model
 
