@@ -22,7 +22,13 @@ import os
 import numpy as np
 import six
 from six.moves import zip  # pylint: disable=redefined-builtin
+
+# Force the use of legacy Keras to prevent the LazyLoader loop
+os.environ['TF_USE_LEGACY_KERAS'] = '1'
+
 import tensorflow as tf
+# Ensure eager execution is off for your TF 1.x code
+tf.compat.v1.disable_eager_execution()
 
 flags = tf.flags
 FLAGS = flags.FLAGS

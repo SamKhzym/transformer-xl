@@ -2,6 +2,8 @@ import os
 os.environ['TF_USE_LEGACY_KERAS'] = '1'
 
 import tensorflow as tf
+# Ensure eager execution is off for your TF 1.x code
+tf.compat.v1.disable_eager_execution()
 
 
 def positional_embedding(pos_seq, inv_freq, bsz=None):

@@ -6,7 +6,13 @@ from collections import Counter, OrderedDict
 
 import numpy as np
 
+import os
+# Force the use of legacy Keras to prevent the LazyLoader loop
+os.environ['TF_USE_LEGACY_KERAS'] = '1'
+
 import tensorflow as tf
+# Ensure eager execution is off for your TF 1.x code
+tf.compat.v1.disable_eager_execution()
 import os
 # from tensorflow.gfile import Open as open
 # from tensorflow.gfile import Exists as exists

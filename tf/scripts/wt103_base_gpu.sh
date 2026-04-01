@@ -72,8 +72,8 @@ elif [[ $1 == 'train' ]]; then
         --mem_len=${MEM_LEN} \
         --train_batch_size=${BSZ} \
         --num_core_per_host=${NUM_CORE} \
-        --iterations=200 \
-        --save_steps=4000 \
+        --iterations=50 \
+        --save_steps=400 \
         ${@:2}
 elif [[ $1 == 'eval' ]]; then
     echo 'Run evaluation...'

@@ -9,6 +9,9 @@ import time
 from absl import flags
 import absl.logging as _logging  # pylint: disable=unused-import
 
+# Force the use of legacy Keras to prevent the LazyLoader loop
+os.environ['TF_USE_LEGACY_KERAS'] = '1'
+
 import tensorflow as tf
 import model
 import data_utils
@@ -18,6 +21,26 @@ from gpu_utils import assign_to_gpu, average_grads_and_vars
 import numpy as np
 
 tf.compat.v1.disable_eager_execution()
+
+import logging
+
+# 1. Get the TensorFlow logger
+tf_logger = logging.getLogger('tensorflow')
+tf_logger.setLevel(logging.INFO) # Set the base level for TF logs
+
+# 2. Create a file handler
+fh = logging.FileHandler('tensorflow_debug.log')
+fh.setLevel(logging.INFO)
+
+# 3. Create a logging format
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fh.setFormatter(formatter)
+
+# 4. Add the handler to the logger
+tf_logger.addHandler(fh)
+
+# Example usage:
+tf.compat.v1.logging.info("This message will be written to tensorflow_debug.log")
 
 # GPU config
 flags.DEFINE_integer("num_hosts", default=1,
@@ -190,6 +213,7 @@ def get_model_fn(n_token, cutoffs):
     # number of parameters
     num_params = sum([np.prod(v.shape) for v in tf.compat.v1.trainable_variables()])
     tf.compat.v1.logging.info('#params: {}'.format(num_params))
+    print('#params: {}'.format(num_params))
 
     # format_str = '{{:<{0}s}}\t{{}}'.format(
     #     max([len(v.name) for v in tf.trainable_variables()]))
@@ -234,6 +258,7 @@ def train(n_token, cutoffs, ps_device):
       use_tpu=False)
 
   tf.compat.v1.logging.info("num of batches {}".format(train_record_info["num_batch"]))
+  print("num of batches {}".format(train_record_info["num_batch"]))
 
   ##### Create computational graph
   train_set = train_input_fn({
@@ -345,12 +370,17 @@ def train(n_token, cutoffs, ps_device):
             "| loss {:.2f} | pplx {:>7.2f}, bpc {:>7.4f}".format(
             curr_step, fetched[-3], fetched[-2],
             curr_loss, math.exp(curr_loss), curr_loss / math.log(2)))
+        print("[{}] | gnorm {:.2f} lr {:8.6f} "
+            "| loss {:.2f} | pplx {:>7.2f}, bpc {:>7.4f}".format(
+            curr_step, fetched[-3], fetched[-2],
+            curr_loss, math.exp(curr_loss), curr_loss / math.log(2)))
         total_loss, prev_step = 0., curr_step
 
       if curr_step > 0 and curr_step % FLAGS.save_steps == 0:
-        save_path = os.path.join(FLAGS.model_dir, "model.ckpt")
+        save_path = os.path.join(FLAGS.model_dir, f"model_{curr_step}.ckpt")
         saver.save(sess, save_path)
         tf.compat.v1.logging.info("Model saved in path: {}".format(save_path))
+        print("Model saved in path: {}".format(save_path))
 
       if curr_step == FLAGS.train_steps:
         break
