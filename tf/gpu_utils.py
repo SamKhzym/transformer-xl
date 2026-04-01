@@ -3,7 +3,7 @@ import tensorflow as tf
 
 def assign_to_gpu(gpu=0, ps_dev="/device:CPU:0"):
     def _assign(op):
-        node_def = op if isinstance(op, tf.NodeDef) else op.node_def
+        node_def = op if isinstance(op, tf.compat.v1.NodeDef) else op.node_def
         if node_def.op == "Variable":
             return ps_dev
         else:
@@ -13,26 +13,40 @@ def assign_to_gpu(gpu=0, ps_dev="/device:CPU:0"):
 
 def average_grads_and_vars(tower_grads_and_vars):
     def average_dense(grad_and_vars):
-        if len(grad_and_vars) == 1:
-            return grad_and_vars[0][0]
+        # Filter out entries where the gradient is None
+        grads = [g for g, v in grad_and_vars if g is not None]
+        
+        if not grads:
+            return None # Or handle as a zero-tensor if required
+        
+        if len(grads) == 1:
+            return grads[0]
 
-        grad = grad_and_vars[0][0]
-        for g, _ in grad_and_vars[1:]:
+        grad = grads[0]
+        for g in grads[1:]:
             grad += g
-        return grad / len(grad_and_vars)
+        return grad / len(grads)
 
     def average_sparse(grad_and_vars):
-        if len(grad_and_vars) == 1:
-            return grad_and_vars[0][0]
+        # Filter out entries where the gradient is None
+        grads_and_vars_valid = [(g, v) for g, v in grad_and_vars if g is not None]
+        
+        if not grads_and_vars_valid:
+            return None
+
+        if len(grads_and_vars_valid) == 1:
+            return grads_and_vars_valid[0][0]
 
         indices = []
         values = []
-        for g, _ in grad_and_vars:
+        for g, _ in grads_and_vars_valid:
             indices += [g.indices]
             values += [g.values]
+        
         indices = tf.concat(indices, 0)
-        values = tf.concat(values, 0) / len(grad_and_vars)
-        return tf.IndexedSlices(values, indices, grad_and_vars[0][0].dense_shape)
+        # Ensure we divide by the number of VALID gradients found
+        values = tf.concat(values, 0) / len(grads_and_vars_valid)
+        return tf.IndexedSlices(values, indices, grads_and_vars_valid[0][0].dense_shape)
 
     average_grads_and_vars = []
     for grad_and_vars in zip(*tower_grads_and_vars):
@@ -52,7 +66,7 @@ def average_grads_and_vars(tower_grads_and_vars):
 
 
 def load_from_checkpoint(saver, logdir):
-    sess = tf.get_default_session()
+    sess = tf.compat.v1.get_default_session()
     ckpt = tf.train.get_checkpoint_state(logdir)
     if ckpt and ckpt.model_checkpoint_path:
         if os.path.isabs(ckpt.model_checkpoint_path):

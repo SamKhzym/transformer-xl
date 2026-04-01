@@ -153,8 +153,8 @@ def metric_fn(loss):
   perplexity = tf.exp(tf.reduce_mean(loss))
   bpc = tf.reduce_mean(loss) / tf.constant(math.log(2))
   return {
-      "perplexity": tf.metrics.mean(perplexity),
-      "bpc": tf.metrics.mean(bpc),
+      "perplexity": tf.compat.v1.metrics.mean(perplexity),
+      "bpc": tf.compat.v1.metrics.mean(bpc),
   }
 
 
@@ -186,15 +186,15 @@ def get_model_fn(n_token, cutoffs, train_bin_sizes, eval_bin_sizes):
       inp_perms, tgt_perms, head_tgt = None, None, None
 
     if FLAGS.init == "uniform":
-      initializer = tf.initializers.random_uniform(
+      initializer = tf.compat.v1.initializers.random_uniform(
           minval=-FLAGS.init_range,
           maxval=FLAGS.init_range,
           seed=None)
     elif FLAGS.init == "normal":
-      initializer = tf.initializers.random_normal(
+      initializer = tf.compat.v1.initializers.random_normal(
           stddev=FLAGS.init_std,
           seed=None)
-      proj_initializer = tf.initializers.random_normal(
+      proj_initializer = tf.compat.v1.initializers.random_normal(
           stddev=FLAGS.proj_init_std,
           seed=None)
 
@@ -203,8 +203,8 @@ def get_model_fn(n_token, cutoffs, train_bin_sizes, eval_bin_sizes):
       for i in range(1, len(tie_projs)):
         tie_projs[i] = True
 
-    tf.logging.info("Vocab size : {}".format(n_token))
-    tf.logging.info("Batch size : {}".format(batch_size))
+    tf.compat.v1.logging.info("Vocab size : {}".format(n_token))
+    tf.compat.v1.logging.info("Batch size : {}".format(batch_size))
 
     loss, new_mems = model.transformer(
         dec_inp=inp,
@@ -238,8 +238,8 @@ def get_model_fn(n_token, cutoffs, train_bin_sizes, eval_bin_sizes):
 
     if mode == tf.estimator.ModeKeys.EVAL:
       if FLAGS.use_tpu:
-        with tf.colocate_with(total_loss):
-          total_loss = tf.contrib.tpu.cross_replica_sum(total_loss) \
+        with tf.compat.v1.colocate_with(total_loss):
+          total_loss = tf.compat.v1.tpu.cross_replica_sum(total_loss) \
                      / FLAGS.num_hosts / FLAGS.num_core_per_host
       metric_loss = tf.tile(tf.reshape(total_loss, [1, 1]), [batch_size, 1])
       eval_spec = tf.contrib.tpu.TPUEstimatorSpec(
@@ -252,18 +252,18 @@ def get_model_fn(n_token, cutoffs, train_bin_sizes, eval_bin_sizes):
       return eval_spec
 
     # Configuring the optimization step.
-    global_step = tf.train.get_global_step()
+    global_step = tf.compat.v1.train.get_global_step()
 
     # increase the learning rate linearly
     if FLAGS.warmup_steps > 0:
-      warmup_lr = tf.to_float(global_step) / tf.to_float(FLAGS.warmup_steps) \
+      warmup_lr = tf.cast(global_step, dtype=tf.float32) / tf.cast(FLAGS.warmup_steps, dtype=tf.float32) \
                   * FLAGS.learning_rate
     else:
       warmup_lr = 0.0
 
     # number of parameters
-    num_params = np.sum([np.prod(v.shape) for v in tf.trainable_variables()])
-    tf.logging.info("#params: {}".format(num_params))
+    num_params = np.sum([np.prod(v.shape) for v in tf.compat.v1.trainable_variables()])
+    tf.compat.v1.logging.info("#params: {}".format(num_params))
 
     # format_str = '{{:<{0}s}}\t{{}}'.format(
     #     max([len(v.name) for v in tf.trainable_variables()]))
@@ -272,27 +272,27 @@ def get_model_fn(n_token, cutoffs, train_bin_sizes, eval_bin_sizes):
 
 
     # decay the learning rate using the cosine schedule
-    decay_lr = tf.train.cosine_decay(
+    decay_lr = tf.compat.v1.train.cosine_decay(
         FLAGS.learning_rate,
         global_step=global_step-FLAGS.warmup_steps,
         decay_steps=FLAGS.train_steps-FLAGS.warmup_steps,
         alpha=FLAGS.min_lr_ratio)
 
-    learning_rate = tf.where(global_step < FLAGS.warmup_steps,
+    learning_rate = tf.compat.v1.where(global_step < FLAGS.warmup_steps,
                              warmup_lr, decay_lr)
 
     if FLAGS.use_tpu:
-      optimizer = tf.contrib.tpu.CrossShardOptimizer(
-          tf.train.AdamOptimizer(learning_rate=learning_rate))
+      optimizer = tf.compat.v1.tpu.CrossShardOptimizer(
+          tf.compat.v1.train.AdamOptimizer(learning_rate=learning_rate))
       #GradientDescentOptimizer
     else:
-      optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate)
+      optimizer = tf.compat.v1.train.AdamOptimizer(learning_rate=learning_rate)
 
     grads_and_vars = optimizer.compute_gradients(total_loss)
     gradients, variables = zip(*grads_and_vars)
     clipped, _ = tf.clip_by_global_norm(gradients, FLAGS.clip)
     train_op = optimizer.apply_gradients(
-        zip(clipped, variables), global_step=tf.train.get_global_step())
+        zip(clipped, variables), global_step=tf.compat.v1.train.get_global_step())
 
     # Constucting TPUEstimatorSpec with cache.
     train_spec = tf.contrib.tpu.TPUEstimatorSpec(
@@ -326,7 +326,7 @@ def get_cache_fn(mem_len):
 def main(unused_argv):
   del unused_argv  # Unused
 
-  tf.logging.set_verbosity(tf.logging.INFO)
+  tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.INFO)
 
   # Get corpus info
   corpus_info = data_utils.get_corpus_info(FLAGS.corpus_info_path)
@@ -382,14 +382,14 @@ def main(unused_argv):
 
   ##### Create estimator
   # TPU Configuration
-  tpu_cluster_resolver = tf.contrib.cluster_resolver.TPUClusterResolver(
+  tpu_cluster_resolver = tf.distribute.cluster_resolver.TPUClusterResolver(
       FLAGS.tpu, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
 
   per_host_input = tf.contrib.tpu.InputPipelineConfig.PER_HOST_V2
   run_config = tf.contrib.tpu.RunConfig(
       cluster=tpu_cluster_resolver,
       model_dir=FLAGS.model_dir,
-      session_config=tf.ConfigProto(
+      session_config=tf.compat.v1.ConfigProto(
           allow_soft_placement=True, log_device_placement=True),
       tpu_config=tf.contrib.tpu.TPUConfig(
           iterations_per_loop=FLAGS.iterations,
@@ -422,12 +422,12 @@ def main(unused_argv):
     if FLAGS.eval_ckpt_path is not None:
       ret = estimator.evaluate(input_fn=eval_input_fn, steps=num_eval_batch,
                                checkpoint_path=FLAGS.eval_ckpt_path)
-      tf.logging.info("=" * 200)
+      tf.compat.v1.logging.info("=" * 200)
       log_str = "Eval results | "
       for key, val in ret.items():
         log_str += "{} {} | ".format(key, val)
-      tf.logging.info(log_str)
-      tf.logging.info("=" * 200)
+      tf.compat.v1.logging.info(log_str)
+      tf.compat.v1.logging.info("=" * 200)
     else:
       ckpt_state = tf.train.get_checkpoint_state(FLAGS.model_dir)
       eval_results = []
@@ -442,12 +442,12 @@ def main(unused_argv):
 
       eval_results.sort(key = lambda x: x["perplexity"])
 
-      tf.logging.info("=" * 200)
+      tf.compat.v1.logging.info("=" * 200)
       log_str = "Best results | "
       for key, val in eval_results[0].items():
         log_str += "{} {} | ".format(key, val)
-      tf.logging.info(log_str)
-      tf.logging.info("=" * 200)
+      tf.compat.v1.logging.info(log_str)
+      tf.compat.v1.logging.info("=" * 200)
   else:
     if not FLAGS.do_eval:
       estimator.train(input_fn=train_input_fn, steps=FLAGS.train_steps)
@@ -459,4 +459,4 @@ def main(unused_argv):
 
 
 if __name__ == "__main__":
-  tf.app.run()
+  tf.compat.v1.app.run()

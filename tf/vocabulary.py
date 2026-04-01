@@ -7,9 +7,9 @@ from collections import Counter, OrderedDict
 import numpy as np
 
 import tensorflow as tf
-
-from tensorflow.gfile import Open as open
-from tensorflow.gfile import Exists as exists
+import os
+# from tensorflow.gfile import Open as open
+# from tensorflow.gfile import Exists as exists
 
 class Vocab(object):
   def __init__(self, special=[], min_freq=0, max_size=None, lower_case=True,
@@ -43,7 +43,7 @@ class Vocab(object):
 
   def count_file(self, path, verbose=False, add_eos=False):
     if verbose: print('counting file {} ...'.format(path))
-    assert exists(path)
+    assert os.path.exists(path)
 
     sents = []
     with open(path, 'r') as f:
@@ -100,7 +100,7 @@ class Vocab(object):
   def encode_file(self, path, ordered=False, verbose=False, add_eos=True,
           add_double_eos=False):
     if verbose: print('encoding file {} ...'.format(path))
-    assert exists(path)
+    assert os.path.exists(path)
     encoded = []
     with open(path, 'r') as f:
       for idx, line in enumerate(f):
