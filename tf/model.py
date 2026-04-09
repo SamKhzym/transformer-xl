@@ -1,5 +1,6 @@
 import os
 os.environ['TF_USE_LEGACY_KERAS'] = '1'
+os.environ['TF_ONEDNN_OPTS'] = '0'
 
 import tensorflow as tf
 # Ensure eager execution is off for your TF 1.x code
@@ -93,8 +94,9 @@ def rel_multihead_attn(w, r, r_w_bias, r_r_bias, attn_mask, mems, d_model,
                                kernel_initializer=kernel_initializer, name='o')
     attn_out = tf.compat.v1.layers.dropout(attn_out, dropout, training=is_training)
 
-    output = tf.compat.v1.keras.layers.LayerNormalization(axis=-1)(attn_out + w)
-  return output
+    with tf.device('/cpu:0'):
+      output = tf.compat.v1.keras.layers.LayerNormalization(axis=-1)(attn_out + w)
+      return output
 
 
 def embedding_lookup(lookup_table, x, use_tpu=True):
