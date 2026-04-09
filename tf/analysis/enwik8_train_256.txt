@@ -1,0 +1,910 @@
+2026-04-02 09:42:38,463 - tensorflow - INFO - This message will be written to tensorflow_debug.log
+2026-04-02 09:42:38,723 - tensorflow - INFO - n_token 204
+2026-04-02 09:42:38,723 - tensorflow - INFO - [train] File names ['train.bsz-24.tlen-512.tfrecords']
+2026-04-02 09:42:38,728 - tensorflow - INFO - num of batches 7242
+2026-04-02 09:42:41,070 - tensorflow - INFO - #params: 41055436
+2026-04-02 09:42:43,343 - tensorflow - INFO - #params: 41080012
+2026-04-02 09:42:45,811 - tensorflow - INFO - #params: 41104588
+2026-04-02 09:43:11,753 - tensorflow - INFO - [50] | gnorm 0.64 lr 0.000250 | loss 3.16 | pplx   23.50, bpc  4.5545
+2026-04-02 09:43:24,685 - tensorflow - INFO - [100] | gnorm 0.63 lr 0.000250 | loss 2.66 | pplx   14.26, bpc  3.8344
+2026-04-02 09:43:37,655 - tensorflow - INFO - [150] | gnorm 0.54 lr 0.000250 | loss 2.37 | pplx   10.70, bpc  3.4195
+2026-04-02 09:43:50,648 - tensorflow - INFO - [200] | gnorm 0.64 lr 0.000250 | loss 2.07 | pplx    7.90, bpc  2.9824
+2026-04-02 09:44:03,643 - tensorflow - INFO - [250] | gnorm 0.60 lr 0.000250 | loss 1.89 | pplx    6.61, bpc  2.7248
+2026-04-02 09:44:16,713 - tensorflow - INFO - [300] | gnorm 0.49 lr 0.000250 | loss 1.73 | pplx    5.62, bpc  2.4917
+2026-04-02 09:44:29,764 - tensorflow - INFO - [350] | gnorm 0.51 lr 0.000250 | loss 1.68 | pplx    5.34, bpc  2.4179
+2026-04-02 09:44:42,772 - tensorflow - INFO - [400] | gnorm 0.44 lr 0.000250 | loss 1.66 | pplx    5.28, bpc  2.4002
+2026-04-02 09:44:52,995 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_400.ckpt
+2026-04-02 09:45:06,001 - tensorflow - INFO - [450] | gnorm 0.55 lr 0.000250 | loss 1.63 | pplx    5.08, bpc  2.3446
+2026-04-02 09:45:19,110 - tensorflow - INFO - [500] | gnorm 0.46 lr 0.000250 | loss 1.61 | pplx    5.00, bpc  2.3207
+2026-04-02 09:45:32,131 - tensorflow - INFO - [550] | gnorm 0.48 lr 0.000250 | loss 1.55 | pplx    4.70, bpc  2.2328
+2026-04-02 09:45:45,151 - tensorflow - INFO - [600] | gnorm 0.45 lr 0.000250 | loss 1.50 | pplx    4.48, bpc  2.1649
+2026-04-02 09:45:58,154 - tensorflow - INFO - [650] | gnorm 0.49 lr 0.000250 | loss 1.44 | pplx    4.23, bpc  2.0821
+2026-04-02 09:46:11,128 - tensorflow - INFO - [700] | gnorm 0.47 lr 0.000250 | loss 1.41 | pplx    4.08, bpc  2.0275
+2026-04-02 09:46:24,140 - tensorflow - INFO - [750] | gnorm 0.42 lr 0.000250 | loss 1.34 | pplx    3.81, bpc  1.9293
+2026-04-02 09:46:37,107 - tensorflow - INFO - [800] | gnorm 0.41 lr 0.000250 | loss 1.39 | pplx    4.02, bpc  2.0078
+2026-04-02 09:46:42,873 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_800.ckpt
+2026-04-02 09:46:55,836 - tensorflow - INFO - [850] | gnorm 0.40 lr 0.000250 | loss 1.35 | pplx    3.84, bpc  1.9412
+2026-04-02 09:47:08,871 - tensorflow - INFO - [900] | gnorm 0.44 lr 0.000250 | loss 1.31 | pplx    3.72, bpc  1.8967
+2026-04-02 09:47:21,853 - tensorflow - INFO - [950] | gnorm 0.42 lr 0.000250 | loss 1.31 | pplx    3.69, bpc  1.8848
+2026-04-02 09:47:34,856 - tensorflow - INFO - [1000] | gnorm 0.42 lr 0.000250 | loss 1.28 | pplx    3.61, bpc  1.8508
+2026-04-02 09:47:47,895 - tensorflow - INFO - [1050] | gnorm 0.38 lr 0.000250 | loss 1.29 | pplx    3.62, bpc  1.8558
+2026-04-02 09:48:00,903 - tensorflow - INFO - [1100] | gnorm 0.46 lr 0.000250 | loss 1.26 | pplx    3.51, bpc  1.8126
+2026-04-02 09:48:13,912 - tensorflow - INFO - [1150] | gnorm 0.41 lr 0.000249 | loss 1.26 | pplx    3.54, bpc  1.8229
+2026-04-02 09:48:26,886 - tensorflow - INFO - [1200] | gnorm 0.39 lr 0.000249 | loss 1.20 | pplx    3.32, bpc  1.7296
+2026-04-02 09:48:35,457 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_1200.ckpt
+2026-04-02 09:48:48,493 - tensorflow - INFO - [1250] | gnorm 0.37 lr 0.000249 | loss 1.19 | pplx    3.30, bpc  1.7235
+2026-04-02 09:49:01,501 - tensorflow - INFO - [1300] | gnorm 0.39 lr 0.000249 | loss 1.22 | pplx    3.37, bpc  1.7544
+2026-04-02 09:49:14,484 - tensorflow - INFO - [1350] | gnorm 0.40 lr 0.000249 | loss 1.23 | pplx    3.42, bpc  1.7740
+2026-04-02 09:49:27,529 - tensorflow - INFO - [1400] | gnorm 0.39 lr 0.000249 | loss 1.18 | pplx    3.25, bpc  1.6999
+2026-04-02 09:49:40,518 - tensorflow - INFO - [1450] | gnorm 0.35 lr 0.000249 | loss 1.21 | pplx    3.34, bpc  1.7406
+2026-04-02 09:49:53,571 - tensorflow - INFO - [1500] | gnorm 0.41 lr 0.000249 | loss 1.20 | pplx    3.32, bpc  1.7295
+2026-04-02 09:50:06,559 - tensorflow - INFO - [1550] | gnorm 0.35 lr 0.000249 | loss 1.15 | pplx    3.16, bpc  1.6590
+2026-04-02 09:50:19,568 - tensorflow - INFO - [1600] | gnorm 0.40 lr 0.000249 | loss 1.20 | pplx    3.32, bpc  1.7312
+2026-04-02 09:50:27,883 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_1600.ckpt
+2026-04-02 09:50:40,925 - tensorflow - INFO - [1650] | gnorm 0.34 lr 0.000249 | loss 1.17 | pplx    3.23, bpc  1.6935
+2026-04-02 09:50:53,938 - tensorflow - INFO - [1700] | gnorm 0.38 lr 0.000249 | loss 1.15 | pplx    3.15, bpc  1.6553
+2026-04-02 09:51:06,911 - tensorflow - INFO - [1750] | gnorm 0.38 lr 0.000249 | loss 1.18 | pplx    3.26, bpc  1.7050
+2026-04-02 09:51:19,959 - tensorflow - INFO - [1800] | gnorm 0.38 lr 0.000249 | loss 1.14 | pplx    3.12, bpc  1.6436
+2026-04-02 09:51:32,933 - tensorflow - INFO - [1850] | gnorm 0.37 lr 0.000249 | loss 1.15 | pplx    3.17, bpc  1.6627
+2026-04-02 09:51:45,901 - tensorflow - INFO - [1900] | gnorm 0.37 lr 0.000249 | loss 1.19 | pplx    3.27, bpc  1.7097
+2026-04-02 09:51:58,908 - tensorflow - INFO - [1950] | gnorm 0.37 lr 0.000249 | loss 1.20 | pplx    3.32, bpc  1.7320
+2026-04-02 09:52:11,910 - tensorflow - INFO - [2000] | gnorm 0.34 lr 0.000248 | loss 1.18 | pplx    3.24, bpc  1.6967
+2026-04-02 09:52:20,695 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_2000.ckpt
+2026-04-02 09:52:33,673 - tensorflow - INFO - [2050] | gnorm 0.35 lr 0.000248 | loss 1.17 | pplx    3.24, bpc  1.6951
+2026-04-02 09:52:46,655 - tensorflow - INFO - [2100] | gnorm 0.37 lr 0.000248 | loss 1.12 | pplx    3.07, bpc  1.6167
+2026-04-02 09:52:59,648 - tensorflow - INFO - [2150] | gnorm 0.37 lr 0.000248 | loss 1.13 | pplx    3.10, bpc  1.6343
+2026-04-02 09:53:12,673 - tensorflow - INFO - [2200] | gnorm 0.36 lr 0.000248 | loss 1.14 | pplx    3.14, bpc  1.6506
+2026-04-02 09:53:25,701 - tensorflow - INFO - [2250] | gnorm 0.37 lr 0.000248 | loss 1.13 | pplx    3.10, bpc  1.6322
+2026-04-02 09:53:38,695 - tensorflow - INFO - [2300] | gnorm 0.34 lr 0.000248 | loss 1.14 | pplx    3.14, bpc  1.6516
+2026-04-02 09:53:51,724 - tensorflow - INFO - [2350] | gnorm 0.38 lr 0.000248 | loss 1.13 | pplx    3.09, bpc  1.6284
+2026-04-02 09:54:04,727 - tensorflow - INFO - [2400] | gnorm 0.36 lr 0.000248 | loss 1.11 | pplx    3.05, bpc  1.6074
+2026-04-02 09:54:18,261 - tensorflow - WARNING - From /nfs/u40/khzyms/cas_732/project2/.venv/lib64/python3.9/site-packages/tensorflow/python/training/saver.py:1068: remove_checkpoint (from tensorflow.python.checkpoint.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2026-04-02 09:54:18,870 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_2400.ckpt
+2026-04-02 09:54:31,903 - tensorflow - INFO - [2450] | gnorm 0.34 lr 0.000248 | loss 1.14 | pplx    3.12, bpc  1.6404
+2026-04-02 09:54:44,882 - tensorflow - INFO - [2500] | gnorm 0.35 lr 0.000248 | loss 1.12 | pplx    3.05, bpc  1.6108
+2026-04-02 09:54:57,853 - tensorflow - INFO - [2550] | gnorm 0.39 lr 0.000248 | loss 1.15 | pplx    3.15, bpc  1.6532
+2026-04-02 09:55:10,867 - tensorflow - INFO - [2600] | gnorm 0.37 lr 0.000247 | loss 1.14 | pplx    3.12, bpc  1.6410
+2026-04-02 09:55:23,836 - tensorflow - INFO - [2650] | gnorm 0.33 lr 0.000247 | loss 1.12 | pplx    3.07, bpc  1.6167
+2026-04-02 09:55:36,814 - tensorflow - INFO - [2700] | gnorm 0.34 lr 0.000247 | loss 1.09 | pplx    2.98, bpc  1.5747
+2026-04-02 09:55:49,771 - tensorflow - INFO - [2750] | gnorm 0.42 lr 0.000247 | loss 1.10 | pplx    3.00, bpc  1.5862
+2026-04-02 09:56:02,736 - tensorflow - INFO - [2800] | gnorm 0.37 lr 0.000247 | loss 1.12 | pplx    3.08, bpc  1.6209
+2026-04-02 09:56:17,135 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_2800.ckpt
+2026-04-02 09:56:30,115 - tensorflow - INFO - [2850] | gnorm 0.36 lr 0.000247 | loss 1.13 | pplx    3.10, bpc  1.6313
+2026-04-02 09:56:43,109 - tensorflow - INFO - [2900] | gnorm 0.36 lr 0.000247 | loss 1.09 | pplx    2.97, bpc  1.5692
+2026-04-02 09:56:56,068 - tensorflow - INFO - [2950] | gnorm 0.34 lr 0.000247 | loss 1.09 | pplx    2.98, bpc  1.5755
+2026-04-02 09:57:09,056 - tensorflow - INFO - [3000] | gnorm 0.35 lr 0.000247 | loss 1.09 | pplx    2.96, bpc  1.5669
+2026-04-02 09:57:22,022 - tensorflow - INFO - [3050] | gnorm 0.41 lr 0.000246 | loss 1.08 | pplx    2.94, bpc  1.5559
+2026-04-02 09:57:35,012 - tensorflow - INFO - [3100] | gnorm 0.36 lr 0.000246 | loss 1.12 | pplx    3.06, bpc  1.6125
+2026-04-02 09:57:47,986 - tensorflow - INFO - [3150] | gnorm 0.34 lr 0.000246 | loss 1.10 | pplx    2.99, bpc  1.5817
+2026-04-02 09:58:00,941 - tensorflow - INFO - [3200] | gnorm 0.35 lr 0.000246 | loss 1.09 | pplx    2.97, bpc  1.5713
+2026-04-02 09:58:11,120 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_3200.ckpt
+2026-04-02 09:58:24,140 - tensorflow - INFO - [3250] | gnorm 0.34 lr 0.000246 | loss 1.07 | pplx    2.91, bpc  1.5427
+2026-04-02 09:58:37,068 - tensorflow - INFO - [3300] | gnorm 0.35 lr 0.000246 | loss 1.04 | pplx    2.84, bpc  1.5076
+2026-04-02 09:58:50,008 - tensorflow - INFO - [3350] | gnorm 0.31 lr 0.000246 | loss 1.11 | pplx    3.03, bpc  1.5990
+2026-04-02 09:59:02,969 - tensorflow - INFO - [3400] | gnorm 0.33 lr 0.000246 | loss 1.09 | pplx    2.97, bpc  1.5710
+2026-04-02 09:59:15,906 - tensorflow - INFO - [3450] | gnorm 0.36 lr 0.000245 | loss 1.08 | pplx    2.96, bpc  1.5636
+2026-04-02 09:59:28,843 - tensorflow - INFO - [3500] | gnorm 0.32 lr 0.000245 | loss 1.08 | pplx    2.94, bpc  1.5535
+2026-04-02 09:59:41,819 - tensorflow - INFO - [3550] | gnorm 0.33 lr 0.000245 | loss 1.08 | pplx    2.95, bpc  1.5622
+2026-04-02 09:59:54,748 - tensorflow - INFO - [3600] | gnorm 0.35 lr 0.000245 | loss 1.07 | pplx    2.92, bpc  1.5446
+2026-04-02 10:00:05,560 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_3600.ckpt
+2026-04-02 10:00:18,511 - tensorflow - INFO - [3650] | gnorm 0.36 lr 0.000245 | loss 1.08 | pplx    2.93, bpc  1.5515
+2026-04-02 10:00:31,418 - tensorflow - INFO - [3700] | gnorm 0.36 lr 0.000245 | loss 1.08 | pplx    2.93, bpc  1.5518
+2026-04-02 10:00:44,447 - tensorflow - INFO - [3750] | gnorm 0.32 lr 0.000245 | loss 1.04 | pplx    2.84, bpc  1.5049
+2026-04-02 10:00:57,467 - tensorflow - INFO - [3800] | gnorm 0.32 lr 0.000244 | loss 1.06 | pplx    2.89, bpc  1.5310
+2026-04-02 10:01:10,483 - tensorflow - INFO - [3850] | gnorm 0.34 lr 0.000244 | loss 1.06 | pplx    2.90, bpc  1.5349
+2026-04-02 10:01:23,483 - tensorflow - INFO - [3900] | gnorm 0.36 lr 0.000244 | loss 1.08 | pplx    2.94, bpc  1.5568
+2026-04-02 10:01:36,481 - tensorflow - INFO - [3950] | gnorm 0.35 lr 0.000244 | loss 1.08 | pplx    2.95, bpc  1.5628
+2026-04-02 10:01:49,469 - tensorflow - INFO - [4000] | gnorm 0.34 lr 0.000244 | loss 1.07 | pplx    2.93, bpc  1.5502
+2026-04-02 10:01:57,454 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_4000.ckpt
+2026-04-02 10:02:10,508 - tensorflow - INFO - [4050] | gnorm 0.34 lr 0.000244 | loss 1.06 | pplx    2.88, bpc  1.5280
+2026-04-02 10:02:23,493 - tensorflow - INFO - [4100] | gnorm 0.37 lr 0.000244 | loss 1.06 | pplx    2.88, bpc  1.5284
+2026-04-02 10:02:36,474 - tensorflow - INFO - [4150] | gnorm 0.42 lr 0.000243 | loss 1.09 | pplx    2.98, bpc  1.5733
+2026-04-02 10:02:49,474 - tensorflow - INFO - [4200] | gnorm 0.35 lr 0.000243 | loss 1.09 | pplx    2.96, bpc  1.5662
+2026-04-02 10:03:02,476 - tensorflow - INFO - [4250] | gnorm 0.32 lr 0.000243 | loss 1.05 | pplx    2.86, bpc  1.5149
+2026-04-02 10:03:15,480 - tensorflow - INFO - [4300] | gnorm 0.33 lr 0.000243 | loss 1.05 | pplx    2.85, bpc  1.5099
+2026-04-02 10:03:28,471 - tensorflow - INFO - [4350] | gnorm 0.34 lr 0.000243 | loss 1.03 | pplx    2.81, bpc  1.4908
+2026-04-02 10:03:41,477 - tensorflow - INFO - [4400] | gnorm 0.35 lr 0.000243 | loss 1.06 | pplx    2.88, bpc  1.5286
+2026-04-02 10:03:46,339 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_4400.ckpt
+2026-04-02 10:03:59,333 - tensorflow - INFO - [4450] | gnorm 0.34 lr 0.000242 | loss 1.07 | pplx    2.91, bpc  1.5427
+2026-04-02 10:04:12,254 - tensorflow - INFO - [4500] | gnorm 0.37 lr 0.000242 | loss 1.08 | pplx    2.96, bpc  1.5647
+2026-04-02 10:04:25,244 - tensorflow - INFO - [4550] | gnorm 0.32 lr 0.000242 | loss 1.07 | pplx    2.91, bpc  1.5390
+2026-04-02 10:04:38,255 - tensorflow - INFO - [4600] | gnorm 0.33 lr 0.000242 | loss 1.06 | pplx    2.89, bpc  1.5332
+2026-04-02 10:04:51,268 - tensorflow - INFO - [4650] | gnorm 0.35 lr 0.000242 | loss 1.07 | pplx    2.91, bpc  1.5410
+2026-04-02 10:05:04,241 - tensorflow - INFO - [4700] | gnorm 0.36 lr 0.000242 | loss 1.04 | pplx    2.82, bpc  1.4972
+2026-04-02 10:05:17,223 - tensorflow - INFO - [4750] | gnorm 0.35 lr 0.000241 | loss 1.02 | pplx    2.77, bpc  1.4716
+2026-04-02 10:05:30,227 - tensorflow - INFO - [4800] | gnorm 0.33 lr 0.000241 | loss 1.03 | pplx    2.81, bpc  1.4930
+2026-04-02 10:05:37,289 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_4800.ckpt
+2026-04-02 10:05:50,305 - tensorflow - INFO - [4850] | gnorm 0.35 lr 0.000241 | loss 1.05 | pplx    2.87, bpc  1.5220
+2026-04-02 10:06:03,269 - tensorflow - INFO - [4900] | gnorm 0.33 lr 0.000241 | loss 1.03 | pplx    2.80, bpc  1.4860
+2026-04-02 10:06:16,296 - tensorflow - INFO - [4950] | gnorm 0.33 lr 0.000241 | loss 1.03 | pplx    2.79, bpc  1.4802
+2026-04-02 10:06:29,246 - tensorflow - INFO - [5000] | gnorm 0.32 lr 0.000241 | loss 1.04 | pplx    2.84, bpc  1.5072
+2026-04-02 10:06:42,226 - tensorflow - INFO - [5050] | gnorm 0.33 lr 0.000240 | loss 1.06 | pplx    2.89, bpc  1.5299
+2026-04-02 10:06:55,217 - tensorflow - INFO - [5100] | gnorm 0.34 lr 0.000240 | loss 1.07 | pplx    2.91, bpc  1.5397
+2026-04-02 10:07:08,236 - tensorflow - INFO - [5150] | gnorm 0.33 lr 0.000240 | loss 1.06 | pplx    2.87, bpc  1.5225
+2026-04-02 10:07:21,216 - tensorflow - INFO - [5200] | gnorm 0.31 lr 0.000240 | loss 1.05 | pplx    2.85, bpc  1.5103
+2026-04-02 10:07:28,568 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_5200.ckpt
+2026-04-02 10:07:41,574 - tensorflow - INFO - [5250] | gnorm 0.33 lr 0.000240 | loss 1.03 | pplx    2.81, bpc  1.4910
+2026-04-02 10:07:54,556 - tensorflow - INFO - [5300] | gnorm 0.33 lr 0.000239 | loss 1.06 | pplx    2.89, bpc  1.5287
+2026-04-02 10:08:07,558 - tensorflow - INFO - [5350] | gnorm 0.34 lr 0.000239 | loss 1.06 | pplx    2.89, bpc  1.5331
+2026-04-02 10:08:20,540 - tensorflow - INFO - [5400] | gnorm 0.32 lr 0.000239 | loss 1.07 | pplx    2.92, bpc  1.5443
+2026-04-02 10:08:33,518 - tensorflow - INFO - [5450] | gnorm 0.33 lr 0.000239 | loss 1.05 | pplx    2.86, bpc  1.5160
+2026-04-02 10:08:46,500 - tensorflow - INFO - [5500] | gnorm 0.34 lr 0.000239 | loss 1.05 | pplx    2.86, bpc  1.5138
+2026-04-02 10:08:59,467 - tensorflow - INFO - [5550] | gnorm 0.34 lr 0.000238 | loss 1.04 | pplx    2.84, bpc  1.5058
+2026-04-02 10:09:12,449 - tensorflow - INFO - [5600] | gnorm 0.32 lr 0.000238 | loss 1.04 | pplx    2.82, bpc  1.4976
+2026-04-02 10:09:17,659 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_5600.ckpt
+2026-04-02 10:09:30,621 - tensorflow - INFO - [5650] | gnorm 0.33 lr 0.000238 | loss 1.03 | pplx    2.80, bpc  1.4847
+2026-04-02 10:09:43,640 - tensorflow - INFO - [5700] | gnorm 0.31 lr 0.000238 | loss 1.02 | pplx    2.78, bpc  1.4744
+2026-04-02 10:09:56,671 - tensorflow - INFO - [5750] | gnorm 0.33 lr 0.000238 | loss 1.02 | pplx    2.76, bpc  1.4672
+2026-04-02 10:10:09,673 - tensorflow - INFO - [5800] | gnorm 0.33 lr 0.000237 | loss 1.00 | pplx    2.73, bpc  1.4495
+2026-04-02 10:10:22,658 - tensorflow - INFO - [5850] | gnorm 0.32 lr 0.000237 | loss 1.01 | pplx    2.73, bpc  1.4515
+2026-04-02 10:10:35,690 - tensorflow - INFO - [5900] | gnorm 0.33 lr 0.000237 | loss 1.02 | pplx    2.76, bpc  1.4651
+2026-04-02 10:10:48,689 - tensorflow - INFO - [5950] | gnorm 0.34 lr 0.000237 | loss 1.04 | pplx    2.82, bpc  1.4959
+2026-04-02 10:11:01,653 - tensorflow - INFO - [6000] | gnorm 0.35 lr 0.000236 | loss 1.02 | pplx    2.77, bpc  1.4684
+2026-04-02 10:11:09,282 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_6000.ckpt
+2026-04-02 10:11:22,298 - tensorflow - INFO - [6050] | gnorm 0.34 lr 0.000236 | loss 1.04 | pplx    2.82, bpc  1.4958
+2026-04-02 10:11:35,282 - tensorflow - INFO - [6100] | gnorm 0.31 lr 0.000236 | loss 1.04 | pplx    2.84, bpc  1.5041
+2026-04-02 10:11:48,282 - tensorflow - INFO - [6150] | gnorm 0.33 lr 0.000236 | loss 1.06 | pplx    2.90, bpc  1.5342
+2026-04-02 10:12:01,302 - tensorflow - INFO - [6200] | gnorm 0.32 lr 0.000236 | loss 1.01 | pplx    2.75, bpc  1.4604
+2026-04-02 10:12:14,311 - tensorflow - INFO - [6250] | gnorm 0.33 lr 0.000235 | loss 1.02 | pplx    2.77, bpc  1.4715
+2026-04-02 10:12:27,303 - tensorflow - INFO - [6300] | gnorm 0.30 lr 0.000235 | loss 1.04 | pplx    2.84, bpc  1.5053
+2026-04-02 10:12:40,276 - tensorflow - INFO - [6350] | gnorm 0.32 lr 0.000235 | loss 1.03 | pplx    2.80, bpc  1.4860
+2026-04-02 10:12:53,275 - tensorflow - INFO - [6400] | gnorm 0.33 lr 0.000235 | loss 1.02 | pplx    2.78, bpc  1.4748
+2026-04-02 10:13:09,127 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_6400.ckpt
+2026-04-02 10:13:22,118 - tensorflow - INFO - [6450] | gnorm 0.34 lr 0.000234 | loss 1.03 | pplx    2.81, bpc  1.4898
+2026-04-02 10:13:35,097 - tensorflow - INFO - [6500] | gnorm 0.33 lr 0.000234 | loss 1.07 | pplx    2.91, bpc  1.5435
+2026-04-02 10:13:48,108 - tensorflow - INFO - [6550] | gnorm 0.35 lr 0.000234 | loss 1.05 | pplx    2.87, bpc  1.5216
+2026-04-02 10:14:01,090 - tensorflow - INFO - [6600] | gnorm 0.35 lr 0.000234 | loss 1.04 | pplx    2.82, bpc  1.4972
+2026-04-02 10:14:14,065 - tensorflow - INFO - [6650] | gnorm 0.32 lr 0.000233 | loss 1.03 | pplx    2.81, bpc  1.4923
+2026-04-02 10:14:27,045 - tensorflow - INFO - [6700] | gnorm 0.36 lr 0.000233 | loss 1.02 | pplx    2.79, bpc  1.4778
+2026-04-02 10:14:40,041 - tensorflow - INFO - [6750] | gnorm 0.33 lr 0.000233 | loss 1.07 | pplx    2.90, bpc  1.5369
+2026-04-02 10:14:53,015 - tensorflow - INFO - [6800] | gnorm 0.36 lr 0.000233 | loss 1.05 | pplx    2.84, bpc  1.5084
+2026-04-02 10:15:10,072 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_6800.ckpt
+2026-04-02 10:15:23,081 - tensorflow - INFO - [6850] | gnorm 0.33 lr 0.000232 | loss 1.03 | pplx    2.80, bpc  1.4851
+2026-04-02 10:15:36,101 - tensorflow - INFO - [6900] | gnorm 0.33 lr 0.000232 | loss 1.02 | pplx    2.77, bpc  1.4680
+2026-04-02 10:15:49,097 - tensorflow - INFO - [6950] | gnorm 0.31 lr 0.000232 | loss 0.99 | pplx    2.68, bpc  1.4232
+2026-04-02 10:16:02,097 - tensorflow - INFO - [7000] | gnorm 0.33 lr 0.000232 | loss 1.01 | pplx    2.76, bpc  1.4634
+2026-04-02 10:16:15,096 - tensorflow - INFO - [7050] | gnorm 0.31 lr 0.000231 | loss 1.00 | pplx    2.71, bpc  1.4392
+2026-04-02 10:16:28,113 - tensorflow - INFO - [7100] | gnorm 0.33 lr 0.000231 | loss 0.99 | pplx    2.70, bpc  1.4325
+2026-04-02 10:16:41,091 - tensorflow - INFO - [7150] | gnorm 0.32 lr 0.000231 | loss 0.99 | pplx    2.69, bpc  1.4266
+2026-04-02 10:16:54,054 - tensorflow - INFO - [7200] | gnorm 0.33 lr 0.000231 | loss 0.98 | pplx    2.67, bpc  1.4191
+2026-04-02 10:17:05,447 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_7200.ckpt
+2026-04-02 10:17:18,292 - tensorflow - INFO - [7250] | gnorm 0.35 lr 0.000230 | loss 1.02 | pplx    2.78, bpc  1.4746
+2026-04-02 10:17:31,251 - tensorflow - INFO - [7300] | gnorm 0.36 lr 0.000230 | loss 1.03 | pplx    2.80, bpc  1.4849
+2026-04-02 10:17:44,209 - tensorflow - INFO - [7350] | gnorm 0.32 lr 0.000230 | loss 1.02 | pplx    2.77, bpc  1.4722
+2026-04-02 10:17:57,156 - tensorflow - INFO - [7400] | gnorm 0.33 lr 0.000230 | loss 1.03 | pplx    2.79, bpc  1.4799
+2026-04-02 10:18:10,154 - tensorflow - INFO - [7450] | gnorm 0.33 lr 0.000229 | loss 0.99 | pplx    2.68, bpc  1.4223
+2026-04-02 10:18:23,107 - tensorflow - INFO - [7500] | gnorm 0.33 lr 0.000229 | loss 0.97 | pplx    2.63, bpc  1.3963
+2026-04-02 10:18:36,058 - tensorflow - INFO - [7550] | gnorm 0.31 lr 0.000229 | loss 0.96 | pplx    2.61, bpc  1.3826
+2026-04-02 10:18:49,033 - tensorflow - INFO - [7600] | gnorm 0.33 lr 0.000228 | loss 0.98 | pplx    2.66, bpc  1.4130
+2026-04-02 10:18:54,588 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_7600.ckpt
+2026-04-02 10:19:07,537 - tensorflow - INFO - [7650] | gnorm 0.33 lr 0.000228 | loss 0.99 | pplx    2.69, bpc  1.4283
+2026-04-02 10:19:20,466 - tensorflow - INFO - [7700] | gnorm 0.31 lr 0.000228 | loss 1.00 | pplx    2.73, bpc  1.4485
+2026-04-02 10:19:33,428 - tensorflow - INFO - [7750] | gnorm 0.32 lr 0.000228 | loss 1.00 | pplx    2.71, bpc  1.4385
+2026-04-02 10:19:46,380 - tensorflow - INFO - [7800] | gnorm 0.35 lr 0.000227 | loss 1.00 | pplx    2.73, bpc  1.4493
+2026-04-02 10:19:59,314 - tensorflow - INFO - [7850] | gnorm 0.31 lr 0.000227 | loss 0.99 | pplx    2.69, bpc  1.4288
+2026-04-02 10:20:12,286 - tensorflow - INFO - [7900] | gnorm 0.35 lr 0.000227 | loss 0.99 | pplx    2.70, bpc  1.4346
+2026-04-02 10:20:25,236 - tensorflow - INFO - [7950] | gnorm 0.31 lr 0.000227 | loss 0.95 | pplx    2.59, bpc  1.3716
+2026-04-02 10:20:38,201 - tensorflow - INFO - [8000] | gnorm 0.32 lr 0.000226 | loss 0.96 | pplx    2.61, bpc  1.3840
+2026-04-02 10:20:52,854 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_8000.ckpt
+2026-04-02 10:21:05,808 - tensorflow - INFO - [8050] | gnorm 0.34 lr 0.000226 | loss 1.01 | pplx    2.74, bpc  1.4540
+2026-04-02 10:21:18,763 - tensorflow - INFO - [8100] | gnorm 0.32 lr 0.000226 | loss 0.99 | pplx    2.68, bpc  1.4219
+2026-04-02 10:21:31,705 - tensorflow - INFO - [8150] | gnorm 0.33 lr 0.000225 | loss 0.98 | pplx    2.66, bpc  1.4100
+2026-04-02 10:21:44,623 - tensorflow - INFO - [8200] | gnorm 0.31 lr 0.000225 | loss 0.98 | pplx    2.67, bpc  1.4192
+2026-04-02 10:21:57,526 - tensorflow - INFO - [8250] | gnorm 0.31 lr 0.000225 | loss 0.98 | pplx    2.66, bpc  1.4141
+2026-04-02 10:22:10,465 - tensorflow - INFO - [8300] | gnorm 0.29 lr 0.000224 | loss 0.99 | pplx    2.68, bpc  1.4230
+2026-04-02 10:22:23,422 - tensorflow - INFO - [8350] | gnorm 0.33 lr 0.000224 | loss 0.97 | pplx    2.64, bpc  1.4031
+2026-04-02 10:22:36,407 - tensorflow - INFO - [8400] | gnorm 0.30 lr 0.000224 | loss 0.98 | pplx    2.67, bpc  1.4191
+2026-04-02 10:22:38,546 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_8400.ckpt
+2026-04-02 10:22:51,483 - tensorflow - INFO - [8450] | gnorm 0.31 lr 0.000224 | loss 0.94 | pplx    2.57, bpc  1.3632
+2026-04-02 10:23:04,438 - tensorflow - INFO - [8500] | gnorm 0.33 lr 0.000223 | loss 0.95 | pplx    2.59, bpc  1.3743
+2026-04-02 10:23:17,406 - tensorflow - INFO - [8550] | gnorm 0.33 lr 0.000223 | loss 0.98 | pplx    2.67, bpc  1.4167
+2026-04-02 10:23:30,344 - tensorflow - INFO - [8600] | gnorm 0.31 lr 0.000223 | loss 0.98 | pplx    2.67, bpc  1.4175
+2026-04-02 10:23:43,317 - tensorflow - INFO - [8650] | gnorm 0.33 lr 0.000222 | loss 0.95 | pplx    2.58, bpc  1.3665
+2026-04-02 10:23:56,250 - tensorflow - INFO - [8700] | gnorm 0.30 lr 0.000222 | loss 0.96 | pplx    2.62, bpc  1.3898
+2026-04-02 10:24:09,209 - tensorflow - INFO - [8750] | gnorm 0.31 lr 0.000222 | loss 0.98 | pplx    2.67, bpc  1.4168
+2026-04-02 10:24:22,173 - tensorflow - INFO - [8800] | gnorm 0.32 lr 0.000221 | loss 0.95 | pplx    2.59, bpc  1.3708
+2026-04-02 10:24:27,512 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_8800.ckpt
+2026-04-02 10:24:40,480 - tensorflow - INFO - [8850] | gnorm 0.29 lr 0.000221 | loss 0.99 | pplx    2.69, bpc  1.4252
+2026-04-02 10:24:53,512 - tensorflow - INFO - [8900] | gnorm 0.31 lr 0.000221 | loss 0.97 | pplx    2.63, bpc  1.3932
+2026-04-02 10:25:06,463 - tensorflow - INFO - [8950] | gnorm 0.32 lr 0.000220 | loss 0.97 | pplx    2.63, bpc  1.3945
+2026-04-02 10:25:19,447 - tensorflow - INFO - [9000] | gnorm 0.32 lr 0.000220 | loss 0.99 | pplx    2.68, bpc  1.4238
+2026-04-02 10:25:32,362 - tensorflow - INFO - [9050] | gnorm 0.33 lr 0.000220 | loss 0.96 | pplx    2.61, bpc  1.3849
+2026-04-02 10:25:45,340 - tensorflow - INFO - [9100] | gnorm 0.31 lr 0.000220 | loss 0.97 | pplx    2.64, bpc  1.3984
+2026-04-02 10:25:58,279 - tensorflow - INFO - [9150] | gnorm 0.32 lr 0.000219 | loss 1.01 | pplx    2.74, bpc  1.4543
+2026-04-02 10:26:11,244 - tensorflow - INFO - [9200] | gnorm 0.31 lr 0.000219 | loss 1.02 | pplx    2.78, bpc  1.4763
+2026-04-02 10:26:12,630 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_9200.ckpt
+2026-04-02 10:26:25,578 - tensorflow - INFO - [9250] | gnorm 0.32 lr 0.000219 | loss 1.00 | pplx    2.73, bpc  1.4493
+2026-04-02 10:26:38,502 - tensorflow - INFO - [9300] | gnorm 0.32 lr 0.000218 | loss 1.00 | pplx    2.72, bpc  1.4414
+2026-04-02 10:26:51,439 - tensorflow - INFO - [9350] | gnorm 0.31 lr 0.000218 | loss 0.96 | pplx    2.62, bpc  1.3901
+2026-04-02 10:27:04,417 - tensorflow - INFO - [9400] | gnorm 0.31 lr 0.000218 | loss 0.97 | pplx    2.63, bpc  1.3966
+2026-04-02 10:27:17,399 - tensorflow - INFO - [9450] | gnorm 0.32 lr 0.000217 | loss 0.98 | pplx    2.66, bpc  1.4090
+2026-04-02 10:27:30,349 - tensorflow - INFO - [9500] | gnorm 0.30 lr 0.000217 | loss 0.97 | pplx    2.65, bpc  1.4063
+2026-04-02 10:27:43,323 - tensorflow - INFO - [9550] | gnorm 0.32 lr 0.000217 | loss 0.99 | pplx    2.69, bpc  1.4258
+2026-04-02 10:27:56,274 - tensorflow - INFO - [9600] | gnorm 0.35 lr 0.000216 | loss 0.97 | pplx    2.64, bpc  1.3986
+2026-04-02 10:28:00,616 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_9600.ckpt
+2026-04-02 10:28:13,566 - tensorflow - INFO - [9650] | gnorm 0.30 lr 0.000216 | loss 0.97 | pplx    2.65, bpc  1.4051
+2026-04-02 10:28:26,530 - tensorflow - INFO - [9700] | gnorm 0.34 lr 0.000216 | loss 0.99 | pplx    2.68, bpc  1.4226
+2026-04-02 10:28:39,464 - tensorflow - INFO - [9750] | gnorm 0.32 lr 0.000215 | loss 0.97 | pplx    2.63, bpc  1.3969
+2026-04-02 10:28:52,417 - tensorflow - INFO - [9800] | gnorm 0.31 lr 0.000215 | loss 0.99 | pplx    2.70, bpc  1.4334
+2026-04-02 10:29:05,334 - tensorflow - INFO - [9850] | gnorm 0.32 lr 0.000215 | loss 0.99 | pplx    2.69, bpc  1.4268
+2026-04-02 10:29:18,270 - tensorflow - INFO - [9900] | gnorm 0.32 lr 0.000214 | loss 0.98 | pplx    2.66, bpc  1.4104
+2026-04-02 10:29:31,202 - tensorflow - INFO - [9950] | gnorm 0.31 lr 0.000214 | loss 0.94 | pplx    2.57, bpc  1.3618
+2026-04-02 10:29:44,172 - tensorflow - INFO - [10000] | gnorm 0.36 lr 0.000214 | loss 0.97 | pplx    2.63, bpc  1.3969
+2026-04-02 10:29:45,724 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_10000.ckpt
+2026-04-02 10:29:58,701 - tensorflow - INFO - [10050] | gnorm 0.34 lr 0.000213 | loss 0.99 | pplx    2.68, bpc  1.4235
+2026-04-02 10:30:11,673 - tensorflow - INFO - [10100] | gnorm 0.32 lr 0.000213 | loss 0.99 | pplx    2.68, bpc  1.4231
+2026-04-02 10:30:24,653 - tensorflow - INFO - [10150] | gnorm 0.32 lr 0.000212 | loss 0.95 | pplx    2.58, bpc  1.3667
+2026-04-02 10:30:37,625 - tensorflow - INFO - [10200] | gnorm 0.31 lr 0.000212 | loss 0.96 | pplx    2.62, bpc  1.3903
+2026-04-02 10:30:50,569 - tensorflow - INFO - [10250] | gnorm 0.31 lr 0.000212 | loss 0.95 | pplx    2.59, bpc  1.3731
+2026-04-02 10:31:03,510 - tensorflow - INFO - [10300] | gnorm 0.32 lr 0.000211 | loss 0.96 | pplx    2.61, bpc  1.3854
+2026-04-02 10:31:16,445 - tensorflow - INFO - [10350] | gnorm 0.34 lr 0.000211 | loss 0.99 | pplx    2.69, bpc  1.4289
+2026-04-02 10:31:29,382 - tensorflow - INFO - [10400] | gnorm 0.32 lr 0.000211 | loss 0.96 | pplx    2.61, bpc  1.3861
+2026-04-02 10:31:38,069 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_10400.ckpt
+2026-04-02 10:31:51,003 - tensorflow - INFO - [10450] | gnorm 0.31 lr 0.000210 | loss 0.96 | pplx    2.62, bpc  1.3892
+2026-04-02 10:32:03,949 - tensorflow - INFO - [10500] | gnorm 0.32 lr 0.000210 | loss 0.94 | pplx    2.56, bpc  1.3553
+2026-04-02 10:32:16,906 - tensorflow - INFO - [10550] | gnorm 0.35 lr 0.000210 | loss 0.94 | pplx    2.57, bpc  1.3624
+2026-04-02 10:32:29,896 - tensorflow - INFO - [10600] | gnorm 0.32 lr 0.000209 | loss 0.99 | pplx    2.68, bpc  1.4239
+2026-04-02 10:32:42,848 - tensorflow - INFO - [10650] | gnorm 0.30 lr 0.000209 | loss 0.96 | pplx    2.62, bpc  1.3877
+2026-04-02 10:32:55,827 - tensorflow - INFO - [10700] | gnorm 0.33 lr 0.000209 | loss 0.97 | pplx    2.63, bpc  1.3949
+2026-04-02 10:33:08,761 - tensorflow - INFO - [10750] | gnorm 0.30 lr 0.000208 | loss 0.96 | pplx    2.62, bpc  1.3868
+2026-04-02 10:33:21,682 - tensorflow - INFO - [10800] | gnorm 0.31 lr 0.000208 | loss 0.98 | pplx    2.65, bpc  1.4077
+2026-04-02 10:33:25,684 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_10800.ckpt
+2026-04-02 10:33:38,673 - tensorflow - INFO - [10850] | gnorm 0.32 lr 0.000207 | loss 0.95 | pplx    2.58, bpc  1.3664
+2026-04-02 10:33:51,630 - tensorflow - INFO - [10900] | gnorm 0.34 lr 0.000207 | loss 0.97 | pplx    2.64, bpc  1.4032
+2026-04-02 10:34:04,609 - tensorflow - INFO - [10950] | gnorm 0.31 lr 0.000207 | loss 0.96 | pplx    2.61, bpc  1.3813
+2026-04-02 10:34:17,585 - tensorflow - INFO - [11000] | gnorm 0.33 lr 0.000206 | loss 0.93 | pplx    2.54, bpc  1.3427
+2026-04-02 10:34:30,600 - tensorflow - INFO - [11050] | gnorm 0.34 lr 0.000206 | loss 0.95 | pplx    2.60, bpc  1.3759
+2026-04-02 10:34:43,596 - tensorflow - INFO - [11100] | gnorm 0.31 lr 0.000206 | loss 0.95 | pplx    2.60, bpc  1.3760
+2026-04-02 10:34:56,610 - tensorflow - INFO - [11150] | gnorm 0.35 lr 0.000205 | loss 0.97 | pplx    2.64, bpc  1.3993
+2026-04-02 10:35:09,596 - tensorflow - INFO - [11200] | gnorm 0.32 lr 0.000205 | loss 0.97 | pplx    2.63, bpc  1.3965
+2026-04-02 10:35:17,304 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_11200.ckpt
+2026-04-02 10:35:30,293 - tensorflow - INFO - [11250] | gnorm 0.34 lr 0.000204 | loss 0.97 | pplx    2.65, bpc  1.4049
+2026-04-02 10:35:43,269 - tensorflow - INFO - [11300] | gnorm 0.30 lr 0.000204 | loss 0.95 | pplx    2.59, bpc  1.3736
+2026-04-02 10:35:56,252 - tensorflow - INFO - [11350] | gnorm 0.33 lr 0.000204 | loss 0.95 | pplx    2.59, bpc  1.3733
+2026-04-02 10:36:09,240 - tensorflow - INFO - [11400] | gnorm 0.35 lr 0.000203 | loss 1.00 | pplx    2.71, bpc  1.4401
+2026-04-02 10:36:22,257 - tensorflow - INFO - [11450] | gnorm 0.33 lr 0.000203 | loss 0.97 | pplx    2.63, bpc  1.3970
+2026-04-02 10:36:35,219 - tensorflow - INFO - [11500] | gnorm 0.30 lr 0.000203 | loss 0.94 | pplx    2.57, bpc  1.3608
+2026-04-02 10:36:48,234 - tensorflow - INFO - [11550] | gnorm 0.32 lr 0.000202 | loss 0.94 | pplx    2.56, bpc  1.3566
+2026-04-02 10:37:01,237 - tensorflow - INFO - [11600] | gnorm 0.35 lr 0.000202 | loss 0.94 | pplx    2.57, bpc  1.3627
+2026-04-02 10:37:03,523 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_11600.ckpt
+2026-04-02 10:37:16,537 - tensorflow - INFO - [11650] | gnorm 0.34 lr 0.000201 | loss 0.95 | pplx    2.59, bpc  1.3725
+2026-04-02 10:37:29,528 - tensorflow - INFO - [11700] | gnorm 0.33 lr 0.000201 | loss 0.98 | pplx    2.68, bpc  1.4199
+2026-04-02 10:37:42,555 - tensorflow - INFO - [11750] | gnorm 0.31 lr 0.000201 | loss 0.99 | pplx    2.69, bpc  1.4279
+2026-04-02 10:37:55,559 - tensorflow - INFO - [11800] | gnorm 0.32 lr 0.000200 | loss 0.96 | pplx    2.61, bpc  1.3865
+2026-04-02 10:38:08,583 - tensorflow - INFO - [11850] | gnorm 0.31 lr 0.000200 | loss 0.97 | pplx    2.65, bpc  1.4042
+2026-04-02 10:38:21,560 - tensorflow - INFO - [11900] | gnorm 0.32 lr 0.000199 | loss 0.97 | pplx    2.63, bpc  1.3941
+2026-04-02 10:38:34,540 - tensorflow - INFO - [11950] | gnorm 0.32 lr 0.000199 | loss 0.94 | pplx    2.57, bpc  1.3606
+2026-04-02 10:38:47,533 - tensorflow - INFO - [12000] | gnorm 0.31 lr 0.000199 | loss 0.92 | pplx    2.52, bpc  1.3330
+2026-04-02 10:38:52,143 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_12000.ckpt
+2026-04-02 10:39:05,156 - tensorflow - INFO - [12050] | gnorm 0.31 lr 0.000198 | loss 0.95 | pplx    2.58, bpc  1.3682
+2026-04-02 10:39:18,153 - tensorflow - INFO - [12100] | gnorm 0.31 lr 0.000198 | loss 0.97 | pplx    2.63, bpc  1.3934
+2026-04-02 10:39:31,167 - tensorflow - INFO - [12150] | gnorm 0.32 lr 0.000197 | loss 0.93 | pplx    2.53, bpc  1.3412
+2026-04-02 10:39:44,186 - tensorflow - INFO - [12200] | gnorm 0.34 lr 0.000197 | loss 0.94 | pplx    2.57, bpc  1.3628
+2026-04-02 10:39:57,194 - tensorflow - INFO - [12250] | gnorm 0.31 lr 0.000197 | loss 0.96 | pplx    2.60, bpc  1.3798
+2026-04-02 10:40:10,195 - tensorflow - INFO - [12300] | gnorm 0.32 lr 0.000196 | loss 0.98 | pplx    2.66, bpc  1.4108
+2026-04-02 10:40:23,181 - tensorflow - INFO - [12350] | gnorm 0.30 lr 0.000196 | loss 0.97 | pplx    2.64, bpc  1.4019
+2026-04-02 10:40:36,158 - tensorflow - INFO - [12400] | gnorm 0.34 lr 0.000195 | loss 0.97 | pplx    2.65, bpc  1.4052
+2026-04-02 10:40:41,937 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_12400.ckpt
+2026-04-02 10:40:54,977 - tensorflow - INFO - [12450] | gnorm 0.33 lr 0.000195 | loss 0.95 | pplx    2.58, bpc  1.3682
+2026-04-02 10:41:07,991 - tensorflow - INFO - [12500] | gnorm 0.31 lr 0.000195 | loss 0.95 | pplx    2.58, bpc  1.3677
+2026-04-02 10:41:20,936 - tensorflow - INFO - [12550] | gnorm 0.33 lr 0.000194 | loss 0.97 | pplx    2.64, bpc  1.4021
+2026-04-02 10:41:33,930 - tensorflow - INFO - [12600] | gnorm 0.30 lr 0.000194 | loss 0.97 | pplx    2.63, bpc  1.3978
+2026-04-02 10:41:46,955 - tensorflow - INFO - [12650] | gnorm 0.32 lr 0.000193 | loss 1.00 | pplx    2.71, bpc  1.4399
+2026-04-02 10:41:59,925 - tensorflow - INFO - [12700] | gnorm 0.34 lr 0.000193 | loss 0.96 | pplx    2.60, bpc  1.3779
+2026-04-02 10:42:12,894 - tensorflow - INFO - [12750] | gnorm 0.31 lr 0.000193 | loss 0.95 | pplx    2.59, bpc  1.3757
+2026-04-02 10:42:25,860 - tensorflow - INFO - [12800] | gnorm 0.31 lr 0.000192 | loss 0.96 | pplx    2.62, bpc  1.3917
+2026-04-02 10:42:30,123 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_12800.ckpt
+2026-04-02 10:42:43,135 - tensorflow - INFO - [12850] | gnorm 0.30 lr 0.000192 | loss 0.95 | pplx    2.57, bpc  1.3635
+2026-04-02 10:42:56,122 - tensorflow - INFO - [12900] | gnorm 0.31 lr 0.000191 | loss 0.95 | pplx    2.58, bpc  1.3676
+2026-04-02 10:43:09,118 - tensorflow - INFO - [12950] | gnorm 0.33 lr 0.000191 | loss 0.93 | pplx    2.54, bpc  1.3466
+2026-04-02 10:43:22,085 - tensorflow - INFO - [13000] | gnorm 0.30 lr 0.000191 | loss 0.95 | pplx    2.57, bpc  1.3635
+2026-04-02 10:43:35,072 - tensorflow - INFO - [13050] | gnorm 0.30 lr 0.000190 | loss 0.92 | pplx    2.50, bpc  1.3225
+2026-04-02 10:43:48,110 - tensorflow - INFO - [13100] | gnorm 0.32 lr 0.000190 | loss 0.91 | pplx    2.50, bpc  1.3198
+2026-04-02 10:44:01,081 - tensorflow - INFO - [13150] | gnorm 0.32 lr 0.000189 | loss 0.95 | pplx    2.58, bpc  1.3674
+2026-04-02 10:44:14,077 - tensorflow - INFO - [13200] | gnorm 0.33 lr 0.000189 | loss 0.95 | pplx    2.58, bpc  1.3701
+2026-04-02 10:44:20,626 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_13200.ckpt
+2026-04-02 10:44:33,634 - tensorflow - INFO - [13250] | gnorm 0.32 lr 0.000188 | loss 0.93 | pplx    2.54, bpc  1.3437
+2026-04-02 10:44:46,655 - tensorflow - INFO - [13300] | gnorm 0.32 lr 0.000188 | loss 0.96 | pplx    2.61, bpc  1.3847
+2026-04-02 10:44:59,653 - tensorflow - INFO - [13350] | gnorm 0.31 lr 0.000188 | loss 0.97 | pplx    2.65, bpc  1.4039
+2026-04-02 10:45:12,669 - tensorflow - INFO - [13400] | gnorm 0.31 lr 0.000187 | loss 0.98 | pplx    2.65, bpc  1.4068
+2026-04-02 10:45:25,652 - tensorflow - INFO - [13450] | gnorm 0.31 lr 0.000187 | loss 0.94 | pplx    2.57, bpc  1.3606
+2026-04-02 10:45:38,683 - tensorflow - INFO - [13500] | gnorm 0.31 lr 0.000186 | loss 0.95 | pplx    2.58, bpc  1.3650
+2026-04-02 10:45:51,657 - tensorflow - INFO - [13550] | gnorm 0.30 lr 0.000186 | loss 0.96 | pplx    2.62, bpc  1.3876
+2026-04-02 10:46:04,663 - tensorflow - INFO - [13600] | gnorm 0.32 lr 0.000185 | loss 0.96 | pplx    2.60, bpc  1.3812
+2026-04-02 10:46:10,286 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_13600.ckpt
+2026-04-02 10:46:23,302 - tensorflow - INFO - [13650] | gnorm 0.31 lr 0.000185 | loss 0.95 | pplx    2.58, bpc  1.3687
+2026-04-02 10:46:36,292 - tensorflow - INFO - [13700] | gnorm 0.32 lr 0.000185 | loss 0.96 | pplx    2.61, bpc  1.3816
+2026-04-02 10:46:49,273 - tensorflow - INFO - [13750] | gnorm 0.34 lr 0.000184 | loss 1.00 | pplx    2.72, bpc  1.4420
+2026-04-02 10:47:02,300 - tensorflow - INFO - [13800] | gnorm 0.35 lr 0.000184 | loss 0.98 | pplx    2.67, bpc  1.4157
+2026-04-02 10:47:15,281 - tensorflow - INFO - [13850] | gnorm 0.31 lr 0.000183 | loss 0.96 | pplx    2.61, bpc  1.3830
+2026-04-02 10:47:28,286 - tensorflow - INFO - [13900] | gnorm 0.31 lr 0.000183 | loss 0.96 | pplx    2.62, bpc  1.3897
+2026-04-02 10:47:41,283 - tensorflow - INFO - [13950] | gnorm 0.33 lr 0.000182 | loss 0.95 | pplx    2.60, bpc  1.3772
+2026-04-02 10:47:54,294 - tensorflow - INFO - [14000] | gnorm 0.31 lr 0.000182 | loss 0.99 | pplx    2.69, bpc  1.4284
+2026-04-02 10:47:58,279 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_14000.ckpt
+2026-04-02 10:48:11,294 - tensorflow - INFO - [14050] | gnorm 0.35 lr 0.000182 | loss 0.97 | pplx    2.64, bpc  1.3980
+2026-04-02 10:48:24,295 - tensorflow - INFO - [14100] | gnorm 0.30 lr 0.000181 | loss 0.96 | pplx    2.60, bpc  1.3797
+2026-04-02 10:48:37,332 - tensorflow - INFO - [14150] | gnorm 0.32 lr 0.000181 | loss 0.94 | pplx    2.56, bpc  1.3543
+2026-04-02 10:48:50,337 - tensorflow - INFO - [14200] | gnorm 0.31 lr 0.000180 | loss 0.92 | pplx    2.51, bpc  1.3274
+2026-04-02 10:49:03,321 - tensorflow - INFO - [14250] | gnorm 0.31 lr 0.000180 | loss 0.95 | pplx    2.59, bpc  1.3721
+2026-04-02 10:49:16,335 - tensorflow - INFO - [14300] | gnorm 0.31 lr 0.000179 | loss 0.91 | pplx    2.49, bpc  1.3139
+2026-04-02 10:49:29,329 - tensorflow - INFO - [14350] | gnorm 0.32 lr 0.000179 | loss 0.93 | pplx    2.53, bpc  1.3410
+2026-04-02 10:49:42,325 - tensorflow - INFO - [14400] | gnorm 0.29 lr 0.000179 | loss 0.92 | pplx    2.51, bpc  1.3269
+2026-04-02 10:49:45,079 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_14400.ckpt
+2026-04-02 10:49:58,059 - tensorflow - INFO - [14450] | gnorm 0.30 lr 0.000178 | loss 0.92 | pplx    2.50, bpc  1.3218
+2026-04-02 10:50:10,920 - tensorflow - INFO - [14500] | gnorm 0.33 lr 0.000178 | loss 0.95 | pplx    2.59, bpc  1.3730
+2026-04-02 10:50:23,910 - tensorflow - INFO - [14550] | gnorm 0.32 lr 0.000177 | loss 0.96 | pplx    2.61, bpc  1.3841
+2026-04-02 10:50:36,904 - tensorflow - INFO - [14600] | gnorm 0.34 lr 0.000177 | loss 0.95 | pplx    2.59, bpc  1.3725
+2026-04-02 10:50:49,845 - tensorflow - INFO - [14650] | gnorm 0.31 lr 0.000176 | loss 0.95 | pplx    2.57, bpc  1.3637
+2026-04-02 10:51:02,814 - tensorflow - INFO - [14700] | gnorm 0.31 lr 0.000176 | loss 0.92 | pplx    2.50, bpc  1.3214
+2026-04-02 10:51:15,788 - tensorflow - INFO - [14750] | gnorm 0.32 lr 0.000175 | loss 0.90 | pplx    2.46, bpc  1.2989
+2026-04-02 10:51:28,760 - tensorflow - INFO - [14800] | gnorm 0.33 lr 0.000175 | loss 0.89 | pplx    2.43, bpc  1.2800
+2026-04-02 10:51:34,136 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_14800.ckpt
+2026-04-02 10:51:47,073 - tensorflow - INFO - [14850] | gnorm 0.32 lr 0.000174 | loss 0.93 | pplx    2.52, bpc  1.3352
+2026-04-02 10:52:00,053 - tensorflow - INFO - [14900] | gnorm 0.31 lr 0.000174 | loss 0.91 | pplx    2.49, bpc  1.3174
+2026-04-02 10:52:12,985 - tensorflow - INFO - [14950] | gnorm 0.31 lr 0.000174 | loss 0.94 | pplx    2.57, bpc  1.3609
+2026-04-02 10:52:25,954 - tensorflow - INFO - [15000] | gnorm 0.30 lr 0.000173 | loss 0.92 | pplx    2.52, bpc  1.3308
+2026-04-02 10:52:38,904 - tensorflow - INFO - [15050] | gnorm 0.31 lr 0.000173 | loss 0.93 | pplx    2.54, bpc  1.3463
+2026-04-02 10:52:51,888 - tensorflow - INFO - [15100] | gnorm 0.33 lr 0.000172 | loss 0.94 | pplx    2.55, bpc  1.3505
+2026-04-02 10:53:04,845 - tensorflow - INFO - [15150] | gnorm 0.30 lr 0.000172 | loss 0.92 | pplx    2.51, bpc  1.3264
+2026-04-02 10:53:17,787 - tensorflow - INFO - [15200] | gnorm 0.33 lr 0.000171 | loss 0.88 | pplx    2.42, bpc  1.2754
+2026-04-02 10:53:24,659 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_15200.ckpt
+2026-04-02 10:53:37,652 - tensorflow - INFO - [15250] | gnorm 0.33 lr 0.000171 | loss 0.89 | pplx    2.44, bpc  1.2892
+2026-04-02 10:53:50,602 - tensorflow - INFO - [15300] | gnorm 0.33 lr 0.000170 | loss 0.94 | pplx    2.56, bpc  1.3572
+2026-04-02 10:54:03,532 - tensorflow - INFO - [15350] | gnorm 0.31 lr 0.000170 | loss 0.91 | pplx    2.49, bpc  1.3184
+2026-04-02 10:54:16,513 - tensorflow - INFO - [15400] | gnorm 0.32 lr 0.000170 | loss 0.92 | pplx    2.52, bpc  1.3322
+2026-04-02 10:54:29,450 - tensorflow - INFO - [15450] | gnorm 0.32 lr 0.000169 | loss 0.91 | pplx    2.50, bpc  1.3196
+2026-04-02 10:54:42,458 - tensorflow - INFO - [15500] | gnorm 0.30 lr 0.000169 | loss 0.91 | pplx    2.49, bpc  1.3190
+2026-04-02 10:54:55,406 - tensorflow - INFO - [15550] | gnorm 0.31 lr 0.000168 | loss 0.91 | pplx    2.48, bpc  1.3099
+2026-04-02 10:55:08,376 - tensorflow - INFO - [15600] | gnorm 0.34 lr 0.000168 | loss 0.91 | pplx    2.49, bpc  1.3189
+2026-04-02 10:55:14,462 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_15600.ckpt
+2026-04-02 10:55:27,440 - tensorflow - INFO - [15650] | gnorm 0.31 lr 0.000167 | loss 0.92 | pplx    2.50, bpc  1.3220
+2026-04-02 10:55:40,410 - tensorflow - INFO - [15700] | gnorm 0.32 lr 0.000167 | loss 0.88 | pplx    2.41, bpc  1.2667
+2026-04-02 10:55:53,371 - tensorflow - INFO - [15750] | gnorm 0.32 lr 0.000166 | loss 0.90 | pplx    2.45, bpc  1.2918
+2026-04-02 10:56:06,312 - tensorflow - INFO - [15800] | gnorm 0.33 lr 0.000166 | loss 0.92 | pplx    2.52, bpc  1.3312
+2026-04-02 10:56:19,273 - tensorflow - INFO - [15850] | gnorm 0.31 lr 0.000165 | loss 0.91 | pplx    2.49, bpc  1.3174
+2026-04-02 10:56:32,254 - tensorflow - INFO - [15900] | gnorm 0.32 lr 0.000165 | loss 0.89 | pplx    2.43, bpc  1.2813
+2026-04-02 10:56:45,180 - tensorflow - INFO - [15950] | gnorm 0.30 lr 0.000164 | loss 0.89 | pplx    2.44, bpc  1.2865
+2026-04-02 10:56:58,106 - tensorflow - INFO - [16000] | gnorm 0.31 lr 0.000164 | loss 0.92 | pplx    2.50, bpc  1.3227
+2026-04-02 10:57:03,125 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_16000.ckpt
+2026-04-02 10:57:16,116 - tensorflow - INFO - [16050] | gnorm 0.32 lr 0.000164 | loss 0.90 | pplx    2.45, bpc  1.2956
+2026-04-02 10:57:29,076 - tensorflow - INFO - [16100] | gnorm 0.33 lr 0.000163 | loss 0.92 | pplx    2.52, bpc  1.3333
+2026-04-02 10:57:42,058 - tensorflow - INFO - [16150] | gnorm 0.31 lr 0.000163 | loss 0.91 | pplx    2.48, bpc  1.3077
+2026-04-02 10:57:54,959 - tensorflow - INFO - [16200] | gnorm 0.33 lr 0.000162 | loss 0.90 | pplx    2.47, bpc  1.3043
+2026-04-02 10:58:07,917 - tensorflow - INFO - [16250] | gnorm 0.30 lr 0.000162 | loss 0.92 | pplx    2.51, bpc  1.3298
+2026-04-02 10:58:20,891 - tensorflow - INFO - [16300] | gnorm 0.31 lr 0.000161 | loss 0.90 | pplx    2.47, bpc  1.3039
+2026-04-02 10:58:33,836 - tensorflow - INFO - [16350] | gnorm 0.32 lr 0.000161 | loss 0.92 | pplx    2.51, bpc  1.3274
+2026-04-02 10:58:46,776 - tensorflow - INFO - [16400] | gnorm 0.32 lr 0.000160 | loss 0.95 | pplx    2.58, bpc  1.3688
+2026-04-02 10:58:52,685 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_16400.ckpt
+2026-04-02 10:59:05,621 - tensorflow - INFO - [16450] | gnorm 0.35 lr 0.000160 | loss 0.96 | pplx    2.62, bpc  1.3886
+2026-04-02 10:59:18,560 - tensorflow - INFO - [16500] | gnorm 0.33 lr 0.000159 | loss 0.95 | pplx    2.58, bpc  1.3698
+2026-04-02 10:59:31,520 - tensorflow - INFO - [16550] | gnorm 0.32 lr 0.000159 | loss 0.93 | pplx    2.54, bpc  1.3475
+2026-04-02 10:59:44,428 - tensorflow - INFO - [16600] | gnorm 0.30 lr 0.000158 | loss 0.91 | pplx    2.47, bpc  1.3072
+2026-04-02 10:59:57,371 - tensorflow - INFO - [16650] | gnorm 0.35 lr 0.000158 | loss 0.92 | pplx    2.51, bpc  1.3305
+2026-04-02 11:00:10,293 - tensorflow - INFO - [16700] | gnorm 0.31 lr 0.000157 | loss 0.91 | pplx    2.49, bpc  1.3170
+2026-04-02 11:00:23,217 - tensorflow - INFO - [16750] | gnorm 0.30 lr 0.000157 | loss 0.92 | pplx    2.51, bpc  1.3259
+2026-04-02 11:00:36,126 - tensorflow - INFO - [16800] | gnorm 0.32 lr 0.000156 | loss 0.93 | pplx    2.53, bpc  1.3372
+2026-04-02 11:00:42,541 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_16800.ckpt
+2026-04-02 11:00:55,494 - tensorflow - INFO - [16850] | gnorm 0.29 lr 0.000156 | loss 0.91 | pplx    2.48, bpc  1.3088
+2026-04-02 11:01:08,430 - tensorflow - INFO - [16900] | gnorm 0.31 lr 0.000156 | loss 0.92 | pplx    2.50, bpc  1.3233
+2026-04-02 11:01:21,356 - tensorflow - INFO - [16950] | gnorm 0.30 lr 0.000155 | loss 0.93 | pplx    2.54, bpc  1.3436
+2026-04-02 11:01:34,273 - tensorflow - INFO - [17000] | gnorm 0.32 lr 0.000155 | loss 0.92 | pplx    2.50, bpc  1.3204
+2026-04-02 11:01:47,208 - tensorflow - INFO - [17050] | gnorm 0.31 lr 0.000154 | loss 0.94 | pplx    2.55, bpc  1.3521
+2026-04-02 11:02:00,157 - tensorflow - INFO - [17100] | gnorm 0.33 lr 0.000154 | loss 0.93 | pplx    2.54, bpc  1.3437
+2026-04-02 11:02:13,084 - tensorflow - INFO - [17150] | gnorm 0.32 lr 0.000153 | loss 0.93 | pplx    2.53, bpc  1.3370
+2026-04-02 11:02:26,019 - tensorflow - INFO - [17200] | gnorm 0.32 lr 0.000153 | loss 0.87 | pplx    2.38, bpc  1.2534
+2026-04-02 11:02:27,481 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_17200.ckpt
+2026-04-02 11:02:40,439 - tensorflow - INFO - [17250] | gnorm 0.29 lr 0.000152 | loss 0.92 | pplx    2.50, bpc  1.3231
+2026-04-02 11:02:53,405 - tensorflow - INFO - [17300] | gnorm 0.32 lr 0.000152 | loss 0.94 | pplx    2.55, bpc  1.3510
+2026-04-02 11:03:06,325 - tensorflow - INFO - [17350] | gnorm 0.31 lr 0.000151 | loss 0.93 | pplx    2.52, bpc  1.3354
+2026-04-02 11:03:19,276 - tensorflow - INFO - [17400] | gnorm 0.33 lr 0.000151 | loss 0.89 | pplx    2.44, bpc  1.2846
+2026-04-02 11:03:32,232 - tensorflow - INFO - [17450] | gnorm 0.29 lr 0.000150 | loss 0.91 | pplx    2.48, bpc  1.3113
+2026-04-02 11:03:45,146 - tensorflow - INFO - [17500] | gnorm 0.31 lr 0.000150 | loss 0.90 | pplx    2.46, bpc  1.2988
+2026-04-02 11:03:58,077 - tensorflow - INFO - [17550] | gnorm 0.31 lr 0.000149 | loss 0.91 | pplx    2.47, bpc  1.3068
+2026-04-02 11:04:11,020 - tensorflow - INFO - [17600] | gnorm 0.32 lr 0.000149 | loss 0.93 | pplx    2.53, bpc  1.3388
+2026-04-02 11:04:15,368 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_17600.ckpt
+2026-04-02 11:04:28,350 - tensorflow - INFO - [17650] | gnorm 0.34 lr 0.000148 | loss 0.91 | pplx    2.48, bpc  1.3119
+2026-04-02 11:04:41,292 - tensorflow - INFO - [17700] | gnorm 0.31 lr 0.000148 | loss 0.91 | pplx    2.48, bpc  1.3122
+2026-04-02 11:04:54,284 - tensorflow - INFO - [17750] | gnorm 0.31 lr 0.000147 | loss 0.87 | pplx    2.40, bpc  1.2617
+2026-04-02 11:05:07,251 - tensorflow - INFO - [17800] | gnorm 0.31 lr 0.000147 | loss 0.91 | pplx    2.48, bpc  1.3083
+2026-04-02 11:05:20,242 - tensorflow - INFO - [17850] | gnorm 0.31 lr 0.000146 | loss 0.93 | pplx    2.54, bpc  1.3458
+2026-04-02 11:05:33,257 - tensorflow - INFO - [17900] | gnorm 0.30 lr 0.000146 | loss 0.90 | pplx    2.47, bpc  1.3041
+2026-04-02 11:05:46,263 - tensorflow - INFO - [17950] | gnorm 0.32 lr 0.000145 | loss 0.91 | pplx    2.48, bpc  1.3090
+2026-04-02 11:05:59,232 - tensorflow - INFO - [18000] | gnorm 0.30 lr 0.000145 | loss 0.91 | pplx    2.48, bpc  1.3084
+2026-04-02 11:06:05,920 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_18000.ckpt
+2026-04-02 11:06:18,932 - tensorflow - INFO - [18050] | gnorm 0.31 lr 0.000144 | loss 0.93 | pplx    2.53, bpc  1.3409
+2026-04-02 11:06:31,894 - tensorflow - INFO - [18100] | gnorm 0.33 lr 0.000144 | loss 0.89 | pplx    2.45, bpc  1.2907
+2026-04-02 11:06:44,886 - tensorflow - INFO - [18150] | gnorm 0.31 lr 0.000144 | loss 0.92 | pplx    2.50, bpc  1.3232
+2026-04-02 11:06:57,879 - tensorflow - INFO - [18200] | gnorm 0.31 lr 0.000143 | loss 0.90 | pplx    2.46, bpc  1.2987
+2026-04-02 11:07:10,873 - tensorflow - INFO - [18250] | gnorm 0.32 lr 0.000143 | loss 0.89 | pplx    2.42, bpc  1.2770
+2026-04-02 11:07:23,840 - tensorflow - INFO - [18300] | gnorm 0.32 lr 0.000142 | loss 0.89 | pplx    2.45, bpc  1.2909
+2026-04-02 11:07:36,840 - tensorflow - INFO - [18350] | gnorm 0.29 lr 0.000142 | loss 0.90 | pplx    2.46, bpc  1.2990
+2026-04-02 11:07:49,791 - tensorflow - INFO - [18400] | gnorm 0.30 lr 0.000141 | loss 0.91 | pplx    2.50, bpc  1.3196
+2026-04-02 11:07:53,977 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_18400.ckpt
+2026-04-02 11:08:07,000 - tensorflow - INFO - [18450] | gnorm 0.33 lr 0.000141 | loss 0.92 | pplx    2.50, bpc  1.3247
+2026-04-02 11:08:19,998 - tensorflow - INFO - [18500] | gnorm 0.30 lr 0.000140 | loss 0.92 | pplx    2.50, bpc  1.3228
+2026-04-02 11:08:32,954 - tensorflow - INFO - [18550] | gnorm 0.35 lr 0.000140 | loss 0.90 | pplx    2.47, bpc  1.3045
+2026-04-02 11:08:45,955 - tensorflow - INFO - [18600] | gnorm 0.33 lr 0.000139 | loss 0.90 | pplx    2.46, bpc  1.2971
+2026-04-02 11:08:58,901 - tensorflow - INFO - [18650] | gnorm 0.29 lr 0.000139 | loss 0.95 | pplx    2.57, bpc  1.3639
+2026-04-02 11:09:11,924 - tensorflow - INFO - [18700] | gnorm 0.31 lr 0.000138 | loss 0.92 | pplx    2.51, bpc  1.3252
+2026-04-02 11:09:24,970 - tensorflow - INFO - [18750] | gnorm 0.31 lr 0.000138 | loss 0.89 | pplx    2.44, bpc  1.2846
+2026-04-02 11:09:37,965 - tensorflow - INFO - [18800] | gnorm 0.29 lr 0.000137 | loss 0.88 | pplx    2.42, bpc  1.2726
+2026-04-02 11:09:39,805 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_18800.ckpt
+2026-04-02 11:09:52,790 - tensorflow - INFO - [18850] | gnorm 0.29 lr 0.000137 | loss 0.90 | pplx    2.45, bpc  1.2917
+2026-04-02 11:10:05,728 - tensorflow - INFO - [18900] | gnorm 0.31 lr 0.000136 | loss 0.91 | pplx    2.48, bpc  1.3103
+2026-04-02 11:10:18,716 - tensorflow - INFO - [18950] | gnorm 0.31 lr 0.000136 | loss 0.94 | pplx    2.56, bpc  1.3536
+2026-04-02 11:10:31,695 - tensorflow - INFO - [19000] | gnorm 0.32 lr 0.000135 | loss 0.94 | pplx    2.56, bpc  1.3537
+2026-04-02 11:10:44,687 - tensorflow - INFO - [19050] | gnorm 0.31 lr 0.000135 | loss 0.90 | pplx    2.46, bpc  1.2967
+2026-04-02 11:10:57,648 - tensorflow - INFO - [19100] | gnorm 0.33 lr 0.000134 | loss 0.94 | pplx    2.55, bpc  1.3492
+2026-04-02 11:11:10,620 - tensorflow - INFO - [19150] | gnorm 0.30 lr 0.000134 | loss 0.91 | pplx    2.48, bpc  1.3098
+2026-04-02 11:11:23,621 - tensorflow - INFO - [19200] | gnorm 0.32 lr 0.000133 | loss 0.89 | pplx    2.44, bpc  1.2858
+2026-04-02 11:11:25,368 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_19200.ckpt
+2026-04-02 11:11:38,342 - tensorflow - INFO - [19250] | gnorm 0.33 lr 0.000133 | loss 0.88 | pplx    2.40, bpc  1.2642
+2026-04-02 11:11:51,330 - tensorflow - INFO - [19300] | gnorm 0.30 lr 0.000132 | loss 0.90 | pplx    2.45, bpc  1.2941
+2026-04-02 11:12:04,267 - tensorflow - INFO - [19350] | gnorm 0.34 lr 0.000132 | loss 0.92 | pplx    2.50, bpc  1.3223
+2026-04-02 11:12:17,222 - tensorflow - INFO - [19400] | gnorm 0.31 lr 0.000131 | loss 0.89 | pplx    2.44, bpc  1.2841
+2026-04-02 11:12:30,210 - tensorflow - INFO - [19450] | gnorm 0.31 lr 0.000131 | loss 0.89 | pplx    2.44, bpc  1.2855
+2026-04-02 11:12:43,153 - tensorflow - INFO - [19500] | gnorm 0.31 lr 0.000130 | loss 0.91 | pplx    2.48, bpc  1.3092
+2026-04-02 11:12:56,137 - tensorflow - INFO - [19550] | gnorm 0.32 lr 0.000130 | loss 0.94 | pplx    2.55, bpc  1.3530
+2026-04-02 11:13:09,053 - tensorflow - INFO - [19600] | gnorm 0.31 lr 0.000129 | loss 0.92 | pplx    2.50, bpc  1.3214
+2026-04-02 11:13:10,449 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_19600.ckpt
+2026-04-02 11:13:23,459 - tensorflow - INFO - [19650] | gnorm 0.33 lr 0.000129 | loss 0.93 | pplx    2.54, bpc  1.3436
+2026-04-02 11:13:36,443 - tensorflow - INFO - [19700] | gnorm 0.32 lr 0.000128 | loss 0.90 | pplx    2.47, bpc  1.3052
+2026-04-02 11:13:49,441 - tensorflow - INFO - [19750] | gnorm 0.32 lr 0.000128 | loss 0.90 | pplx    2.46, bpc  1.2986
+2026-04-02 11:14:02,431 - tensorflow - INFO - [19800] | gnorm 0.31 lr 0.000127 | loss 0.92 | pplx    2.51, bpc  1.3304
+2026-04-02 11:14:15,441 - tensorflow - INFO - [19850] | gnorm 0.33 lr 0.000127 | loss 0.92 | pplx    2.51, bpc  1.3261
+2026-04-02 11:14:28,427 - tensorflow - INFO - [19900] | gnorm 0.33 lr 0.000126 | loss 0.95 | pplx    2.58, bpc  1.3699
+2026-04-02 11:14:41,431 - tensorflow - INFO - [19950] | gnorm 0.31 lr 0.000126 | loss 0.91 | pplx    2.48, bpc  1.3100
+2026-04-02 11:14:54,401 - tensorflow - INFO - [20000] | gnorm 0.30 lr 0.000126 | loss 0.90 | pplx    2.47, bpc  1.3018
+2026-04-02 11:15:00,009 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_20000.ckpt
+2026-04-02 11:15:13,025 - tensorflow - INFO - [20050] | gnorm 0.30 lr 0.000125 | loss 0.91 | pplx    2.49, bpc  1.3144
+2026-04-02 11:15:26,007 - tensorflow - INFO - [20100] | gnorm 0.31 lr 0.000125 | loss 0.90 | pplx    2.47, bpc  1.3050
+2026-04-02 11:15:39,000 - tensorflow - INFO - [20150] | gnorm 0.31 lr 0.000124 | loss 0.90 | pplx    2.46, bpc  1.2998
+2026-04-02 11:15:51,966 - tensorflow - INFO - [20200] | gnorm 0.31 lr 0.000124 | loss 0.88 | pplx    2.41, bpc  1.2693
+2026-04-02 11:16:04,962 - tensorflow - INFO - [20250] | gnorm 0.31 lr 0.000123 | loss 0.90 | pplx    2.46, bpc  1.2958
+2026-04-02 11:16:17,964 - tensorflow - INFO - [20300] | gnorm 0.33 lr 0.000123 | loss 0.87 | pplx    2.39, bpc  1.2592
+2026-04-02 11:16:30,979 - tensorflow - INFO - [20350] | gnorm 0.32 lr 0.000122 | loss 0.86 | pplx    2.37, bpc  1.2477
+2026-04-02 11:16:43,973 - tensorflow - INFO - [20400] | gnorm 0.33 lr 0.000122 | loss 0.90 | pplx    2.47, bpc  1.3046
+2026-04-02 11:16:48,672 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_20400.ckpt
+2026-04-02 11:17:01,686 - tensorflow - INFO - [20450] | gnorm 0.31 lr 0.000121 | loss 0.90 | pplx    2.46, bpc  1.2990
+2026-04-02 11:17:14,705 - tensorflow - INFO - [20500] | gnorm 0.33 lr 0.000121 | loss 0.89 | pplx    2.43, bpc  1.2788
+2026-04-02 11:17:27,734 - tensorflow - INFO - [20550] | gnorm 0.32 lr 0.000120 | loss 0.91 | pplx    2.50, bpc  1.3196
+2026-04-02 11:17:40,735 - tensorflow - INFO - [20600] | gnorm 0.34 lr 0.000120 | loss 0.93 | pplx    2.54, bpc  1.3460
+2026-04-02 11:17:53,766 - tensorflow - INFO - [20650] | gnorm 0.30 lr 0.000119 | loss 0.91 | pplx    2.49, bpc  1.3135
+2026-04-02 11:18:06,762 - tensorflow - INFO - [20700] | gnorm 0.32 lr 0.000119 | loss 0.91 | pplx    2.47, bpc  1.3070
+2026-04-02 11:18:19,765 - tensorflow - INFO - [20750] | gnorm 0.33 lr 0.000118 | loss 0.91 | pplx    2.48, bpc  1.3100
+2026-04-02 11:18:32,764 - tensorflow - INFO - [20800] | gnorm 0.31 lr 0.000118 | loss 0.91 | pplx    2.48, bpc  1.3106
+2026-04-02 11:18:38,178 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_20800.ckpt
+2026-04-02 11:18:51,191 - tensorflow - INFO - [20850] | gnorm 0.32 lr 0.000117 | loss 0.92 | pplx    2.50, bpc  1.3237
+2026-04-02 11:19:04,225 - tensorflow - INFO - [20900] | gnorm 0.33 lr 0.000117 | loss 0.90 | pplx    2.46, bpc  1.2965
+2026-04-02 11:19:17,182 - tensorflow - INFO - [20950] | gnorm 0.31 lr 0.000116 | loss 0.91 | pplx    2.49, bpc  1.3186
+2026-04-02 11:19:30,175 - tensorflow - INFO - [21000] | gnorm 0.32 lr 0.000116 | loss 0.96 | pplx    2.61, bpc  1.3824
+2026-04-02 11:19:43,203 - tensorflow - INFO - [21050] | gnorm 0.31 lr 0.000115 | loss 0.94 | pplx    2.56, bpc  1.3544
+2026-04-02 11:19:56,249 - tensorflow - INFO - [21100] | gnorm 0.33 lr 0.000115 | loss 0.92 | pplx    2.51, bpc  1.3271
+2026-04-02 11:20:09,255 - tensorflow - INFO - [21150] | gnorm 0.30 lr 0.000114 | loss 0.90 | pplx    2.46, bpc  1.3002
+2026-04-02 11:20:22,288 - tensorflow - INFO - [21200] | gnorm 0.33 lr 0.000114 | loss 0.92 | pplx    2.51, bpc  1.3290
+2026-04-02 11:20:30,967 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_21200.ckpt
+2026-04-02 11:20:44,018 - tensorflow - INFO - [21250] | gnorm 0.31 lr 0.000113 | loss 0.94 | pplx    2.56, bpc  1.3583
+2026-04-02 11:20:57,055 - tensorflow - INFO - [21300] | gnorm 0.33 lr 0.000113 | loss 0.92 | pplx    2.50, bpc  1.3236
+2026-04-02 11:21:10,113 - tensorflow - INFO - [21350] | gnorm 0.32 lr 0.000112 | loss 0.91 | pplx    2.50, bpc  1.3198
+2026-04-02 11:21:23,130 - tensorflow - INFO - [21400] | gnorm 0.32 lr 0.000112 | loss 0.89 | pplx    2.44, bpc  1.2853
+2026-04-02 11:21:36,149 - tensorflow - INFO - [21450] | gnorm 0.30 lr 0.000111 | loss 0.87 | pplx    2.40, bpc  1.2623
+2026-04-02 11:21:49,170 - tensorflow - INFO - [21500] | gnorm 0.31 lr 0.000111 | loss 0.91 | pplx    2.48, bpc  1.3120
+2026-04-02 11:22:02,177 - tensorflow - INFO - [21550] | gnorm 0.31 lr 0.000110 | loss 0.86 | pplx    2.37, bpc  1.2425
+2026-04-02 11:22:15,196 - tensorflow - INFO - [21600] | gnorm 0.31 lr 0.000110 | loss 0.88 | pplx    2.42, bpc  1.2766
+2026-04-02 11:22:21,752 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_21600.ckpt
+2026-04-02 11:22:34,747 - tensorflow - INFO - [21650] | gnorm 0.31 lr 0.000109 | loss 0.87 | pplx    2.39, bpc  1.2599
+2026-04-02 11:22:47,774 - tensorflow - INFO - [21700] | gnorm 0.32 lr 0.000109 | loss 0.88 | pplx    2.42, bpc  1.2751
+2026-04-02 11:23:00,685 - tensorflow - INFO - [21750] | gnorm 0.32 lr 0.000108 | loss 0.91 | pplx    2.49, bpc  1.3169
+2026-04-02 11:23:13,745 - tensorflow - INFO - [21800] | gnorm 0.31 lr 0.000108 | loss 0.91 | pplx    2.47, bpc  1.3073
+2026-04-02 11:23:26,768 - tensorflow - INFO - [21850] | gnorm 0.30 lr 0.000107 | loss 0.91 | pplx    2.49, bpc  1.3167
+2026-04-02 11:23:39,785 - tensorflow - INFO - [21900] | gnorm 0.32 lr 0.000107 | loss 0.89 | pplx    2.43, bpc  1.2819
+2026-04-02 11:23:52,783 - tensorflow - INFO - [21950] | gnorm 0.32 lr 0.000107 | loss 0.88 | pplx    2.40, bpc  1.2650
+2026-04-02 11:24:05,774 - tensorflow - INFO - [22000] | gnorm 0.31 lr 0.000106 | loss 0.86 | pplx    2.37, bpc  1.2437
+2026-04-02 11:24:11,090 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_22000.ckpt
+2026-04-02 11:24:24,144 - tensorflow - INFO - [22050] | gnorm 0.32 lr 0.000106 | loss 0.84 | pplx    2.31, bpc  1.2094
+2026-04-02 11:24:37,213 - tensorflow - INFO - [22100] | gnorm 0.30 lr 0.000105 | loss 0.87 | pplx    2.40, bpc  1.2619
+2026-04-02 11:24:50,265 - tensorflow - INFO - [22150] | gnorm 0.33 lr 0.000105 | loss 0.88 | pplx    2.42, bpc  1.2745
+2026-04-02 11:25:03,292 - tensorflow - INFO - [22200] | gnorm 0.32 lr 0.000104 | loss 0.90 | pplx    2.46, bpc  1.2988
+2026-04-02 11:25:16,345 - tensorflow - INFO - [22250] | gnorm 0.31 lr 0.000104 | loss 0.88 | pplx    2.41, bpc  1.2708
+2026-04-02 11:25:29,410 - tensorflow - INFO - [22300] | gnorm 0.31 lr 0.000103 | loss 0.89 | pplx    2.45, bpc  1.2903
+2026-04-02 11:25:42,463 - tensorflow - INFO - [22350] | gnorm 0.31 lr 0.000103 | loss 0.89 | pplx    2.43, bpc  1.2812
+2026-04-02 11:25:55,485 - tensorflow - INFO - [22400] | gnorm 0.29 lr 0.000102 | loss 0.88 | pplx    2.40, bpc  1.2645
+2026-04-02 11:25:56,907 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_22400.ckpt
+2026-04-02 11:26:09,925 - tensorflow - INFO - [22450] | gnorm 0.30 lr 0.000102 | loss 0.84 | pplx    2.31, bpc  1.2089
+2026-04-02 11:26:23,013 - tensorflow - INFO - [22500] | gnorm 0.33 lr 0.000101 | loss 0.86 | pplx    2.35, bpc  1.2354
+2026-04-02 11:26:36,049 - tensorflow - INFO - [22550] | gnorm 0.34 lr 0.000101 | loss 0.89 | pplx    2.45, bpc  1.2908
+2026-04-02 11:26:49,075 - tensorflow - INFO - [22600] | gnorm 0.30 lr 0.000100 | loss 0.87 | pplx    2.40, bpc  1.2611
+2026-04-02 11:27:02,062 - tensorflow - INFO - [22650] | gnorm 0.32 lr 0.000100 | loss 0.87 | pplx    2.40, bpc  1.2605
+2026-04-02 11:27:15,095 - tensorflow - INFO - [22700] | gnorm 0.30 lr 0.000099 | loss 0.88 | pplx    2.41, bpc  1.2693
+2026-04-02 11:27:28,132 - tensorflow - INFO - [22750] | gnorm 0.32 lr 0.000099 | loss 0.88 | pplx    2.41, bpc  1.2702
+2026-04-02 11:27:41,171 - tensorflow - INFO - [22800] | gnorm 0.31 lr 0.000098 | loss 0.85 | pplx    2.33, bpc  1.2199
+2026-04-02 11:27:47,270 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_22800.ckpt
+2026-04-02 11:28:00,266 - tensorflow - INFO - [22850] | gnorm 0.32 lr 0.000098 | loss 0.88 | pplx    2.41, bpc  1.2714
+2026-04-02 11:28:13,295 - tensorflow - INFO - [22900] | gnorm 0.31 lr 0.000097 | loss 0.87 | pplx    2.38, bpc  1.2507
+2026-04-02 11:28:26,321 - tensorflow - INFO - [22950] | gnorm 0.32 lr 0.000097 | loss 0.84 | pplx    2.31, bpc  1.2082
+2026-04-02 11:28:39,334 - tensorflow - INFO - [23000] | gnorm 0.31 lr 0.000096 | loss 0.86 | pplx    2.36, bpc  1.2401
+2026-04-02 11:28:52,340 - tensorflow - INFO - [23050] | gnorm 0.30 lr 0.000096 | loss 0.88 | pplx    2.41, bpc  1.2714
+2026-04-02 11:29:05,373 - tensorflow - INFO - [23100] | gnorm 0.31 lr 0.000095 | loss 0.87 | pplx    2.38, bpc  1.2539
+2026-04-02 11:29:18,422 - tensorflow - INFO - [23150] | gnorm 0.32 lr 0.000095 | loss 0.85 | pplx    2.33, bpc  1.2213
+2026-04-02 11:29:31,400 - tensorflow - INFO - [23200] | gnorm 0.31 lr 0.000095 | loss 0.85 | pplx    2.35, bpc  1.2331
+2026-04-02 11:29:34,627 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_23200.ckpt
+2026-04-02 11:29:47,654 - tensorflow - INFO - [23250] | gnorm 0.32 lr 0.000094 | loss 0.87 | pplx    2.38, bpc  1.2505
+2026-04-02 11:30:00,672 - tensorflow - INFO - [23300] | gnorm 0.32 lr 0.000094 | loss 0.86 | pplx    2.37, bpc  1.2435
+2026-04-02 11:30:13,678 - tensorflow - INFO - [23350] | gnorm 0.29 lr 0.000093 | loss 0.88 | pplx    2.41, bpc  1.2695
+2026-04-02 11:30:26,693 - tensorflow - INFO - [23400] | gnorm 0.31 lr 0.000093 | loss 0.87 | pplx    2.39, bpc  1.2541
+2026-04-02 11:30:39,719 - tensorflow - INFO - [23450] | gnorm 0.30 lr 0.000092 | loss 0.87 | pplx    2.38, bpc  1.2517
+2026-04-02 11:30:52,745 - tensorflow - INFO - [23500] | gnorm 0.33 lr 0.000092 | loss 0.87 | pplx    2.40, bpc  1.2624
+2026-04-02 11:31:05,782 - tensorflow - INFO - [23550] | gnorm 0.31 lr 0.000091 | loss 0.86 | pplx    2.36, bpc  1.2412
+2026-04-02 11:31:18,802 - tensorflow - INFO - [23600] | gnorm 0.31 lr 0.000091 | loss 0.89 | pplx    2.43, bpc  1.2781
+2026-04-02 11:31:20,147 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_23600.ckpt
+2026-04-02 11:31:33,185 - tensorflow - INFO - [23650] | gnorm 0.32 lr 0.000090 | loss 0.91 | pplx    2.49, bpc  1.3162
+2026-04-02 11:31:46,226 - tensorflow - INFO - [23700] | gnorm 0.30 lr 0.000090 | loss 0.92 | pplx    2.50, bpc  1.3236
+2026-04-02 11:31:59,299 - tensorflow - INFO - [23750] | gnorm 0.32 lr 0.000089 | loss 0.92 | pplx    2.50, bpc  1.3244
+2026-04-02 11:32:12,270 - tensorflow - INFO - [23800] | gnorm 0.33 lr 0.000089 | loss 0.88 | pplx    2.42, bpc  1.2762
+2026-04-02 11:32:25,282 - tensorflow - INFO - [23850] | gnorm 0.31 lr 0.000088 | loss 0.86 | pplx    2.37, bpc  1.2462
+2026-04-02 11:32:38,323 - tensorflow - INFO - [23900] | gnorm 0.33 lr 0.000088 | loss 0.89 | pplx    2.44, bpc  1.2844
+2026-04-02 11:32:51,393 - tensorflow - INFO - [23950] | gnorm 0.32 lr 0.000087 | loss 0.87 | pplx    2.39, bpc  1.2579
+2026-04-02 11:33:04,364 - tensorflow - INFO - [24000] | gnorm 0.31 lr 0.000087 | loss 0.88 | pplx    2.40, bpc  1.2650
+2026-04-02 11:33:10,316 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_24000.ckpt
+2026-04-02 11:33:23,314 - tensorflow - INFO - [24050] | gnorm 0.33 lr 0.000087 | loss 0.89 | pplx    2.43, bpc  1.2830
+2026-04-02 11:33:36,374 - tensorflow - INFO - [24100] | gnorm 0.31 lr 0.000086 | loss 0.86 | pplx    2.37, bpc  1.2459
+2026-04-02 11:33:49,347 - tensorflow - INFO - [24150] | gnorm 0.32 lr 0.000086 | loss 0.88 | pplx    2.42, bpc  1.2739
+2026-04-02 11:34:02,362 - tensorflow - INFO - [24200] | gnorm 0.31 lr 0.000085 | loss 0.89 | pplx    2.44, bpc  1.2885
+2026-04-02 11:34:15,373 - tensorflow - INFO - [24250] | gnorm 0.33 lr 0.000085 | loss 0.87 | pplx    2.40, bpc  1.2622
+2026-04-02 11:34:28,404 - tensorflow - INFO - [24300] | gnorm 0.30 lr 0.000084 | loss 0.90 | pplx    2.45, bpc  1.2933
+2026-04-02 11:34:41,508 - tensorflow - INFO - [24350] | gnorm 0.32 lr 0.000084 | loss 0.89 | pplx    2.44, bpc  1.2868
+2026-04-02 11:34:54,549 - tensorflow - INFO - [24400] | gnorm 0.32 lr 0.000083 | loss 0.88 | pplx    2.42, bpc  1.2722
+2026-04-02 11:34:55,830 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_24400.ckpt
+2026-04-02 11:35:08,847 - tensorflow - INFO - [24450] | gnorm 0.33 lr 0.000083 | loss 0.83 | pplx    2.29, bpc  1.1961
+2026-04-02 11:35:21,819 - tensorflow - INFO - [24500] | gnorm 0.31 lr 0.000082 | loss 0.89 | pplx    2.43, bpc  1.2780
+2026-04-02 11:35:34,866 - tensorflow - INFO - [24550] | gnorm 0.32 lr 0.000082 | loss 0.90 | pplx    2.45, bpc  1.2916
+2026-04-02 11:35:47,875 - tensorflow - INFO - [24600] | gnorm 0.34 lr 0.000081 | loss 0.87 | pplx    2.39, bpc  1.2585
+2026-04-02 11:36:00,894 - tensorflow - INFO - [24650] | gnorm 0.30 lr 0.000081 | loss 0.86 | pplx    2.36, bpc  1.2370
+2026-04-02 11:36:13,883 - tensorflow - INFO - [24700] | gnorm 0.32 lr 0.000081 | loss 0.88 | pplx    2.41, bpc  1.2669
+2026-04-02 11:36:26,867 - tensorflow - INFO - [24750] | gnorm 0.31 lr 0.000080 | loss 0.86 | pplx    2.36, bpc  1.2389
+2026-04-02 11:36:39,944 - tensorflow - INFO - [24800] | gnorm 0.33 lr 0.000080 | loss 0.87 | pplx    2.39, bpc  1.2595
+2026-04-02 11:36:45,323 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_24800.ckpt
+2026-04-02 11:36:58,352 - tensorflow - INFO - [24850] | gnorm 0.30 lr 0.000079 | loss 0.88 | pplx    2.41, bpc  1.2670
+2026-04-02 11:37:11,393 - tensorflow - INFO - [24900] | gnorm 0.31 lr 0.000079 | loss 0.87 | pplx    2.40, bpc  1.2607
+2026-04-02 11:37:24,382 - tensorflow - INFO - [24950] | gnorm 0.29 lr 0.000078 | loss 0.87 | pplx    2.39, bpc  1.2554
+2026-04-02 11:37:37,417 - tensorflow - INFO - [25000] | gnorm 0.34 lr 0.000078 | loss 0.83 | pplx    2.29, bpc  1.1984
+2026-04-02 11:37:50,386 - tensorflow - INFO - [25050] | gnorm 0.32 lr 0.000077 | loss 0.88 | pplx    2.42, bpc  1.2753
+2026-04-02 11:38:03,431 - tensorflow - INFO - [25100] | gnorm 0.31 lr 0.000077 | loss 0.89 | pplx    2.43, bpc  1.2815
+2026-04-02 11:38:16,457 - tensorflow - INFO - [25150] | gnorm 0.31 lr 0.000077 | loss 0.86 | pplx    2.37, bpc  1.2477
+2026-04-02 11:38:29,458 - tensorflow - INFO - [25200] | gnorm 0.31 lr 0.000076 | loss 0.87 | pplx    2.38, bpc  1.2497
+2026-04-02 11:38:36,109 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_25200.ckpt
+2026-04-02 11:38:49,129 - tensorflow - INFO - [25250] | gnorm 0.31 lr 0.000076 | loss 0.88 | pplx    2.40, bpc  1.2625
+2026-04-02 11:39:02,153 - tensorflow - INFO - [25300] | gnorm 0.31 lr 0.000075 | loss 0.88 | pplx    2.42, bpc  1.2767
+2026-04-02 11:39:15,201 - tensorflow - INFO - [25350] | gnorm 0.31 lr 0.000075 | loss 0.86 | pplx    2.37, bpc  1.2467
+2026-04-02 11:39:28,196 - tensorflow - INFO - [25400] | gnorm 0.33 lr 0.000074 | loss 0.88 | pplx    2.40, bpc  1.2640
+2026-04-02 11:39:41,226 - tensorflow - INFO - [25450] | gnorm 0.33 lr 0.000074 | loss 0.85 | pplx    2.34, bpc  1.2271
+2026-04-02 11:39:54,237 - tensorflow - INFO - [25500] | gnorm 0.31 lr 0.000073 | loss 0.86 | pplx    2.36, bpc  1.2385
+2026-04-02 11:40:07,237 - tensorflow - INFO - [25550] | gnorm 0.30 lr 0.000073 | loss 0.85 | pplx    2.34, bpc  1.2270
+2026-04-02 11:40:20,253 - tensorflow - INFO - [25600] | gnorm 0.32 lr 0.000072 | loss 0.87 | pplx    2.39, bpc  1.2574
+2026-04-02 11:40:22,434 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_25600.ckpt
+2026-04-02 11:40:35,483 - tensorflow - INFO - [25650] | gnorm 0.32 lr 0.000072 | loss 0.88 | pplx    2.40, bpc  1.2634
+2026-04-02 11:40:48,479 - tensorflow - INFO - [25700] | gnorm 0.32 lr 0.000072 | loss 0.88 | pplx    2.41, bpc  1.2716
+2026-04-02 11:41:01,465 - tensorflow - INFO - [25750] | gnorm 0.30 lr 0.000071 | loss 0.87 | pplx    2.40, bpc  1.2617
+2026-04-02 11:41:14,487 - tensorflow - INFO - [25800] | gnorm 0.31 lr 0.000071 | loss 0.87 | pplx    2.38, bpc  1.2495
+2026-04-02 11:41:27,509 - tensorflow - INFO - [25850] | gnorm 0.31 lr 0.000070 | loss 0.87 | pplx    2.38, bpc  1.2490
+2026-04-02 11:41:40,529 - tensorflow - INFO - [25900] | gnorm 0.33 lr 0.000070 | loss 0.91 | pplx    2.49, bpc  1.3176
+2026-04-02 11:41:53,561 - tensorflow - INFO - [25950] | gnorm 0.32 lr 0.000069 | loss 0.87 | pplx    2.39, bpc  1.2589
+2026-04-02 11:42:06,519 - tensorflow - INFO - [26000] | gnorm 0.31 lr 0.000069 | loss 0.86 | pplx    2.37, bpc  1.2418
+2026-04-02 11:42:11,331 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_26000.ckpt
+2026-04-02 11:42:24,368 - tensorflow - INFO - [26050] | gnorm 0.33 lr 0.000069 | loss 0.84 | pplx    2.32, bpc  1.2166
+2026-04-02 11:42:37,383 - tensorflow - INFO - [26100] | gnorm 0.32 lr 0.000068 | loss 0.86 | pplx    2.37, bpc  1.2445
+2026-04-02 11:42:50,392 - tensorflow - INFO - [26150] | gnorm 0.31 lr 0.000068 | loss 0.87 | pplx    2.39, bpc  1.2583
+2026-04-02 11:43:03,374 - tensorflow - INFO - [26200] | gnorm 0.31 lr 0.000067 | loss 0.91 | pplx    2.48, bpc  1.3114
+2026-04-02 11:43:16,370 - tensorflow - INFO - [26250] | gnorm 0.31 lr 0.000067 | loss 0.89 | pplx    2.43, bpc  1.2820
+2026-04-02 11:43:29,355 - tensorflow - INFO - [26300] | gnorm 0.32 lr 0.000066 | loss 0.87 | pplx    2.40, bpc  1.2610
+2026-04-02 11:43:42,367 - tensorflow - INFO - [26350] | gnorm 0.33 lr 0.000066 | loss 0.89 | pplx    2.44, bpc  1.2885
+2026-04-02 11:43:55,385 - tensorflow - INFO - [26400] | gnorm 0.33 lr 0.000066 | loss 0.87 | pplx    2.39, bpc  1.2558
+2026-04-02 11:43:58,897 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_26400.ckpt
+2026-04-02 11:44:11,907 - tensorflow - INFO - [26450] | gnorm 0.31 lr 0.000065 | loss 0.85 | pplx    2.34, bpc  1.2283
+2026-04-02 11:44:24,888 - tensorflow - INFO - [26500] | gnorm 0.33 lr 0.000065 | loss 0.85 | pplx    2.33, bpc  1.2218
+2026-04-02 11:44:37,887 - tensorflow - INFO - [26550] | gnorm 0.32 lr 0.000064 | loss 0.86 | pplx    2.37, bpc  1.2475
+2026-04-02 11:44:50,957 - tensorflow - INFO - [26600] | gnorm 0.30 lr 0.000064 | loss 0.88 | pplx    2.41, bpc  1.2707
+2026-04-02 11:45:04,103 - tensorflow - INFO - [26650] | gnorm 0.31 lr 0.000063 | loss 0.85 | pplx    2.35, bpc  1.2324
+2026-04-02 11:45:17,655 - tensorflow - INFO - [26700] | gnorm 0.30 lr 0.000063 | loss 0.85 | pplx    2.34, bpc  1.2286
+2026-04-02 11:45:30,803 - tensorflow - INFO - [26750] | gnorm 0.32 lr 0.000063 | loss 0.88 | pplx    2.40, bpc  1.2641
+2026-04-02 11:45:43,931 - tensorflow - INFO - [26800] | gnorm 0.32 lr 0.000062 | loss 0.91 | pplx    2.50, bpc  1.3196
+2026-04-02 11:45:51,075 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_26800.ckpt
+2026-04-02 11:46:04,239 - tensorflow - INFO - [26850] | gnorm 0.32 lr 0.000062 | loss 0.88 | pplx    2.41, bpc  1.2663
+2026-04-02 11:46:17,424 - tensorflow - INFO - [26900] | gnorm 0.31 lr 0.000061 | loss 0.90 | pplx    2.45, bpc  1.2937
+2026-04-02 11:46:30,595 - tensorflow - INFO - [26950] | gnorm 0.31 lr 0.000061 | loss 0.86 | pplx    2.37, bpc  1.2458
+2026-04-02 11:46:43,697 - tensorflow - INFO - [27000] | gnorm 0.33 lr 0.000060 | loss 0.87 | pplx    2.38, bpc  1.2518
+2026-04-02 11:46:56,830 - tensorflow - INFO - [27050] | gnorm 0.33 lr 0.000060 | loss 0.89 | pplx    2.44, bpc  1.2857
+2026-04-02 11:47:10,028 - tensorflow - INFO - [27100] | gnorm 0.32 lr 0.000060 | loss 0.88 | pplx    2.42, bpc  1.2754
+2026-04-02 11:47:23,152 - tensorflow - INFO - [27150] | gnorm 0.34 lr 0.000059 | loss 0.91 | pplx    2.50, bpc  1.3194
+2026-04-02 11:47:36,325 - tensorflow - INFO - [27200] | gnorm 0.32 lr 0.000059 | loss 0.87 | pplx    2.39, bpc  1.2542
+2026-04-02 11:47:40,457 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_27200.ckpt
+2026-04-02 11:47:53,614 - tensorflow - INFO - [27250] | gnorm 0.32 lr 0.000058 | loss 0.86 | pplx    2.37, bpc  1.2472
+2026-04-02 11:48:06,777 - tensorflow - INFO - [27300] | gnorm 0.31 lr 0.000058 | loss 0.88 | pplx    2.42, bpc  1.2732
+2026-04-02 11:48:19,880 - tensorflow - INFO - [27350] | gnorm 0.33 lr 0.000058 | loss 0.85 | pplx    2.35, bpc  1.2328
+2026-04-02 11:48:32,971 - tensorflow - INFO - [27400] | gnorm 0.31 lr 0.000057 | loss 0.88 | pplx    2.41, bpc  1.2704
+2026-04-02 11:48:46,088 - tensorflow - INFO - [27450] | gnorm 0.32 lr 0.000057 | loss 0.85 | pplx    2.34, bpc  1.2245
+2026-04-02 11:48:59,233 - tensorflow - INFO - [27500] | gnorm 0.32 lr 0.000056 | loss 0.86 | pplx    2.36, bpc  1.2371
+2026-04-02 11:49:12,393 - tensorflow - INFO - [27550] | gnorm 0.32 lr 0.000056 | loss 0.84 | pplx    2.33, bpc  1.2179
+2026-04-02 11:49:25,498 - tensorflow - INFO - [27600] | gnorm 0.31 lr 0.000056 | loss 0.83 | pplx    2.29, bpc  1.1958
+2026-04-02 11:49:31,053 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_27600.ckpt
+2026-04-02 11:49:44,223 - tensorflow - INFO - [27650] | gnorm 0.32 lr 0.000055 | loss 0.88 | pplx    2.40, bpc  1.2636
+2026-04-02 11:49:57,393 - tensorflow - INFO - [27700] | gnorm 0.30 lr 0.000055 | loss 0.86 | pplx    2.36, bpc  1.2401
+2026-04-02 11:50:10,545 - tensorflow - INFO - [27750] | gnorm 0.32 lr 0.000054 | loss 0.86 | pplx    2.36, bpc  1.2365
+2026-04-02 11:50:23,663 - tensorflow - INFO - [27800] | gnorm 0.31 lr 0.000054 | loss 0.88 | pplx    2.42, bpc  1.2738
+2026-04-02 11:50:36,766 - tensorflow - INFO - [27850] | gnorm 0.33 lr 0.000054 | loss 0.91 | pplx    2.47, bpc  1.3063
+2026-04-02 11:50:49,929 - tensorflow - INFO - [27900] | gnorm 0.31 lr 0.000053 | loss 0.87 | pplx    2.39, bpc  1.2540
+2026-04-02 11:51:03,066 - tensorflow - INFO - [27950] | gnorm 0.32 lr 0.000053 | loss 0.88 | pplx    2.41, bpc  1.2695
+2026-04-02 11:51:16,202 - tensorflow - INFO - [28000] | gnorm 0.32 lr 0.000052 | loss 0.88 | pplx    2.41, bpc  1.2701
+2026-04-02 11:51:19,051 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_28000.ckpt
+2026-04-02 11:51:32,209 - tensorflow - INFO - [28050] | gnorm 0.28 lr 0.000052 | loss 0.86 | pplx    2.37, bpc  1.2447
+2026-04-02 11:51:45,358 - tensorflow - INFO - [28100] | gnorm 0.32 lr 0.000052 | loss 0.89 | pplx    2.43, bpc  1.2798
+2026-04-02 11:51:58,509 - tensorflow - INFO - [28150] | gnorm 0.33 lr 0.000051 | loss 0.87 | pplx    2.38, bpc  1.2523
+2026-04-02 11:52:11,666 - tensorflow - INFO - [28200] | gnorm 0.34 lr 0.000051 | loss 0.89 | pplx    2.43, bpc  1.2785
+2026-04-02 11:52:24,821 - tensorflow - INFO - [28250] | gnorm 0.30 lr 0.000050 | loss 0.91 | pplx    2.50, bpc  1.3199
+2026-04-02 11:52:37,896 - tensorflow - INFO - [28300] | gnorm 0.33 lr 0.000050 | loss 0.92 | pplx    2.50, bpc  1.3248
+2026-04-02 11:52:51,054 - tensorflow - INFO - [28350] | gnorm 0.32 lr 0.000050 | loss 0.89 | pplx    2.43, bpc  1.2815
+2026-04-02 11:53:04,168 - tensorflow - INFO - [28400] | gnorm 0.32 lr 0.000049 | loss 0.86 | pplx    2.36, bpc  1.2399
+2026-04-02 11:53:11,123 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_28400.ckpt
+2026-04-02 11:53:24,263 - tensorflow - INFO - [28450] | gnorm 0.31 lr 0.000049 | loss 0.90 | pplx    2.46, bpc  1.2971
+2026-04-02 11:53:37,408 - tensorflow - INFO - [28500] | gnorm 0.32 lr 0.000048 | loss 0.91 | pplx    2.49, bpc  1.3137
+2026-04-02 11:53:50,552 - tensorflow - INFO - [28550] | gnorm 0.33 lr 0.000048 | loss 0.88 | pplx    2.40, bpc  1.2660
+2026-04-02 11:54:03,694 - tensorflow - INFO - [28600] | gnorm 0.31 lr 0.000048 | loss 0.88 | pplx    2.42, bpc  1.2761
+2026-04-02 11:54:16,855 - tensorflow - INFO - [28650] | gnorm 0.31 lr 0.000047 | loss 0.86 | pplx    2.36, bpc  1.2360
+2026-04-02 11:54:30,014 - tensorflow - INFO - [28700] | gnorm 0.33 lr 0.000047 | loss 0.84 | pplx    2.32, bpc  1.2124
+2026-04-02 11:54:43,107 - tensorflow - INFO - [28750] | gnorm 0.31 lr 0.000047 | loss 0.88 | pplx    2.41, bpc  1.2718
+2026-04-02 11:54:56,272 - tensorflow - INFO - [28800] | gnorm 0.33 lr 0.000046 | loss 0.82 | pplx    2.28, bpc  1.1881
+2026-04-02 11:55:02,694 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_28800.ckpt
+2026-04-02 11:55:15,840 - tensorflow - INFO - [28850] | gnorm 0.30 lr 0.000046 | loss 0.85 | pplx    2.35, bpc  1.2319
+2026-04-02 11:55:28,981 - tensorflow - INFO - [28900] | gnorm 0.31 lr 0.000045 | loss 0.85 | pplx    2.33, bpc  1.2210
+2026-04-02 11:55:42,114 - tensorflow - INFO - [28950] | gnorm 0.34 lr 0.000045 | loss 0.86 | pplx    2.37, bpc  1.2448
+2026-04-02 11:55:55,064 - tensorflow - INFO - [29000] | gnorm 0.30 lr 0.000045 | loss 0.87 | pplx    2.40, bpc  1.2621
+2026-04-02 11:56:08,208 - tensorflow - INFO - [29050] | gnorm 0.31 lr 0.000044 | loss 0.88 | pplx    2.40, bpc  1.2653
+2026-04-02 11:56:21,374 - tensorflow - INFO - [29100] | gnorm 0.31 lr 0.000044 | loss 0.88 | pplx    2.40, bpc  1.2634
+2026-04-02 11:56:34,511 - tensorflow - INFO - [29150] | gnorm 0.31 lr 0.000044 | loss 0.85 | pplx    2.34, bpc  1.2288
+2026-04-02 11:56:47,649 - tensorflow - INFO - [29200] | gnorm 0.32 lr 0.000043 | loss 0.85 | pplx    2.33, bpc  1.2218
+2026-04-02 11:56:53,524 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_29200.ckpt
+2026-04-02 11:57:06,675 - tensorflow - INFO - [29250] | gnorm 0.30 lr 0.000043 | loss 0.83 | pplx    2.30, bpc  1.2005
+2026-04-02 11:57:19,825 - tensorflow - INFO - [29300] | gnorm 0.32 lr 0.000042 | loss 0.82 | pplx    2.27, bpc  1.1826
+2026-04-02 11:57:32,954 - tensorflow - INFO - [29350] | gnorm 0.34 lr 0.000042 | loss 0.84 | pplx    2.32, bpc  1.2141
+2026-04-02 11:57:46,160 - tensorflow - INFO - [29400] | gnorm 0.31 lr 0.000042 | loss 0.85 | pplx    2.34, bpc  1.2263
+2026-04-02 11:57:59,231 - tensorflow - INFO - [29450] | gnorm 0.31 lr 0.000041 | loss 0.88 | pplx    2.41, bpc  1.2683
+2026-04-02 11:58:12,345 - tensorflow - INFO - [29500] | gnorm 0.31 lr 0.000041 | loss 0.85 | pplx    2.35, bpc  1.2298
+2026-04-02 11:58:25,512 - tensorflow - INFO - [29550] | gnorm 0.31 lr 0.000041 | loss 0.86 | pplx    2.35, bpc  1.2340
+2026-04-02 11:58:38,547 - tensorflow - INFO - [29600] | gnorm 0.31 lr 0.000040 | loss 0.86 | pplx    2.36, bpc  1.2370
+2026-04-02 11:58:44,070 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_29600.ckpt
+2026-04-02 11:58:57,219 - tensorflow - INFO - [29650] | gnorm 0.36 lr 0.000040 | loss 0.84 | pplx    2.33, bpc  1.2187
+2026-04-02 11:59:10,285 - tensorflow - INFO - [29700] | gnorm 0.31 lr 0.000040 | loss 0.81 | pplx    2.24, bpc  1.1661
+2026-04-02 11:59:23,418 - tensorflow - INFO - [29750] | gnorm 0.32 lr 0.000039 | loss 0.84 | pplx    2.31, bpc  1.2062
+2026-04-02 11:59:36,546 - tensorflow - INFO - [29800] | gnorm 0.31 lr 0.000039 | loss 0.86 | pplx    2.37, bpc  1.2452
+2026-04-02 11:59:49,656 - tensorflow - INFO - [29850] | gnorm 0.29 lr 0.000039 | loss 0.84 | pplx    2.32, bpc  1.2111
+2026-04-02 12:00:02,746 - tensorflow - INFO - [29900] | gnorm 0.33 lr 0.000038 | loss 0.85 | pplx    2.34, bpc  1.2239
+2026-04-02 12:00:15,846 - tensorflow - INFO - [29950] | gnorm 0.32 lr 0.000038 | loss 0.85 | pplx    2.33, bpc  1.2209
+2026-04-02 12:00:28,982 - tensorflow - INFO - [30000] | gnorm 0.32 lr 0.000037 | loss 0.85 | pplx    2.35, bpc  1.2317
+2026-04-02 12:00:35,049 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_30000.ckpt
+2026-04-02 12:00:48,138 - tensorflow - INFO - [30050] | gnorm 0.34 lr 0.000037 | loss 0.81 | pplx    2.25, bpc  1.1696
+2026-04-02 12:01:01,288 - tensorflow - INFO - [30100] | gnorm 0.31 lr 0.000037 | loss 0.85 | pplx    2.35, bpc  1.2327
+2026-04-02 12:01:14,395 - tensorflow - INFO - [30150] | gnorm 0.33 lr 0.000036 | loss 0.84 | pplx    2.32, bpc  1.2131
+2026-04-02 12:01:27,460 - tensorflow - INFO - [30200] | gnorm 0.29 lr 0.000036 | loss 0.81 | pplx    2.25, bpc  1.1678
+2026-04-02 12:01:40,605 - tensorflow - INFO - [30250] | gnorm 0.32 lr 0.000036 | loss 0.83 | pplx    2.30, bpc  1.2037
+2026-04-02 12:01:53,702 - tensorflow - INFO - [30300] | gnorm 0.32 lr 0.000035 | loss 0.85 | pplx    2.35, bpc  1.2307
+2026-04-02 12:02:06,775 - tensorflow - INFO - [30350] | gnorm 0.31 lr 0.000035 | loss 0.83 | pplx    2.29, bpc  1.1966
+2026-04-02 12:02:19,919 - tensorflow - INFO - [30400] | gnorm 0.31 lr 0.000035 | loss 0.83 | pplx    2.29, bpc  1.1944
+2026-04-02 12:02:26,753 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_30400.ckpt
+2026-04-02 12:02:39,839 - tensorflow - INFO - [30450] | gnorm 0.31 lr 0.000034 | loss 0.82 | pplx    2.27, bpc  1.1820
+2026-04-02 12:02:52,978 - tensorflow - INFO - [30500] | gnorm 0.32 lr 0.000034 | loss 0.84 | pplx    2.31, bpc  1.2070
+2026-04-02 12:03:06,123 - tensorflow - INFO - [30550] | gnorm 0.31 lr 0.000034 | loss 0.85 | pplx    2.34, bpc  1.2251
+2026-04-02 12:03:19,214 - tensorflow - INFO - [30600] | gnorm 0.32 lr 0.000033 | loss 0.84 | pplx    2.32, bpc  1.2133
+2026-04-02 12:03:32,351 - tensorflow - INFO - [30650] | gnorm 0.32 lr 0.000033 | loss 0.83 | pplx    2.30, bpc  1.2044
+2026-04-02 12:03:45,448 - tensorflow - INFO - [30700] | gnorm 0.31 lr 0.000033 | loss 0.85 | pplx    2.35, bpc  1.2311
+2026-04-02 12:03:58,638 - tensorflow - INFO - [30750] | gnorm 0.32 lr 0.000032 | loss 0.84 | pplx    2.31, bpc  1.2050
+2026-04-02 12:04:11,627 - tensorflow - INFO - [30800] | gnorm 0.30 lr 0.000032 | loss 0.84 | pplx    2.31, bpc  1.2086
+2026-04-02 12:04:22,556 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_30800.ckpt
+2026-04-02 12:04:35,529 - tensorflow - INFO - [30850] | gnorm 0.33 lr 0.000032 | loss 0.86 | pplx    2.37, bpc  1.2439
+2026-04-02 12:04:48,476 - tensorflow - INFO - [30900] | gnorm 0.32 lr 0.000031 | loss 0.89 | pplx    2.45, bpc  1.2909
+2026-04-02 12:05:01,457 - tensorflow - INFO - [30950] | gnorm 0.34 lr 0.000031 | loss 0.88 | pplx    2.41, bpc  1.2662
+2026-04-02 12:05:14,450 - tensorflow - INFO - [31000] | gnorm 0.31 lr 0.000031 | loss 0.90 | pplx    2.47, bpc  1.3016
+2026-04-02 12:05:27,430 - tensorflow - INFO - [31050] | gnorm 0.32 lr 0.000031 | loss 0.85 | pplx    2.34, bpc  1.2257
+2026-04-02 12:05:40,418 - tensorflow - INFO - [31100] | gnorm 0.32 lr 0.000030 | loss 0.84 | pplx    2.31, bpc  1.2075
+2026-04-02 12:05:53,403 - tensorflow - INFO - [31150] | gnorm 0.30 lr 0.000030 | loss 0.86 | pplx    2.36, bpc  1.2407
+2026-04-02 12:06:06,361 - tensorflow - INFO - [31200] | gnorm 0.31 lr 0.000030 | loss 0.85 | pplx    2.33, bpc  1.2214
+2026-04-02 12:06:11,845 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_31200.ckpt
+2026-04-02 12:06:24,799 - tensorflow - INFO - [31250] | gnorm 0.31 lr 0.000029 | loss 0.86 | pplx    2.35, bpc  1.2354
+2026-04-02 12:06:37,783 - tensorflow - INFO - [31300] | gnorm 0.33 lr 0.000029 | loss 0.85 | pplx    2.35, bpc  1.2330
+2026-04-02 12:06:50,788 - tensorflow - INFO - [31350] | gnorm 0.32 lr 0.000029 | loss 0.84 | pplx    2.31, bpc  1.2076
+2026-04-02 12:07:03,773 - tensorflow - INFO - [31400] | gnorm 0.33 lr 0.000028 | loss 0.87 | pplx    2.38, bpc  1.2490
+2026-04-02 12:07:16,738 - tensorflow - INFO - [31450] | gnorm 0.31 lr 0.000028 | loss 0.85 | pplx    2.35, bpc  1.2327
+2026-04-02 12:07:29,731 - tensorflow - INFO - [31500] | gnorm 0.31 lr 0.000028 | loss 0.86 | pplx    2.37, bpc  1.2444
+2026-04-02 12:07:42,707 - tensorflow - INFO - [31550] | gnorm 0.33 lr 0.000027 | loss 0.87 | pplx    2.39, bpc  1.2550
+2026-04-02 12:07:55,695 - tensorflow - INFO - [31600] | gnorm 0.31 lr 0.000027 | loss 0.86 | pplx    2.37, bpc  1.2457
+2026-04-02 12:07:59,950 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_31600.ckpt
+2026-04-02 12:08:12,978 - tensorflow - INFO - [31650] | gnorm 0.32 lr 0.000027 | loss 0.85 | pplx    2.33, bpc  1.2206
+2026-04-02 12:08:26,018 - tensorflow - INFO - [31700] | gnorm 0.32 lr 0.000027 | loss 0.81 | pplx    2.24, bpc  1.1645
+2026-04-02 12:08:39,058 - tensorflow - INFO - [31750] | gnorm 0.32 lr 0.000026 | loss 0.86 | pplx    2.37, bpc  1.2435
+2026-04-02 12:08:52,071 - tensorflow - INFO - [31800] | gnorm 0.32 lr 0.000026 | loss 0.87 | pplx    2.38, bpc  1.2530
+2026-04-02 12:09:05,154 - tensorflow - INFO - [31850] | gnorm 0.32 lr 0.000026 | loss 0.84 | pplx    2.33, bpc  1.2173
+2026-04-02 12:09:18,146 - tensorflow - INFO - [31900] | gnorm 0.29 lr 0.000025 | loss 0.83 | pplx    2.30, bpc  1.2023
+2026-04-02 12:09:31,169 - tensorflow - INFO - [31950] | gnorm 0.33 lr 0.000025 | loss 0.86 | pplx    2.35, bpc  1.2354
+2026-04-02 12:09:44,175 - tensorflow - INFO - [32000] | gnorm 0.31 lr 0.000025 | loss 0.83 | pplx    2.29, bpc  1.1951
+2026-04-02 12:09:48,708 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_32000.ckpt
+2026-04-02 12:10:01,728 - tensorflow - INFO - [32050] | gnorm 0.33 lr 0.000024 | loss 0.85 | pplx    2.34, bpc  1.2249
+2026-04-02 12:10:14,813 - tensorflow - INFO - [32100] | gnorm 0.32 lr 0.000024 | loss 0.85 | pplx    2.35, bpc  1.2312
+2026-04-02 12:10:28,321 - tensorflow - INFO - [32150] | gnorm 0.29 lr 0.000024 | loss 0.85 | pplx    2.34, bpc  1.2266
+2026-04-02 12:10:41,464 - tensorflow - INFO - [32200] | gnorm 0.30 lr 0.000024 | loss 0.85 | pplx    2.34, bpc  1.2276
+2026-04-02 12:10:54,592 - tensorflow - INFO - [32250] | gnorm 0.30 lr 0.000023 | loss 0.80 | pplx    2.22, bpc  1.1481
+2026-04-02 12:11:07,735 - tensorflow - INFO - [32300] | gnorm 0.33 lr 0.000023 | loss 0.87 | pplx    2.38, bpc  1.2522
+2026-04-02 12:11:20,896 - tensorflow - INFO - [32350] | gnorm 0.33 lr 0.000023 | loss 0.86 | pplx    2.37, bpc  1.2424
+2026-04-02 12:11:33,970 - tensorflow - INFO - [32400] | gnorm 0.31 lr 0.000023 | loss 0.84 | pplx    2.32, bpc  1.2132
+2026-04-02 12:11:39,238 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_32400.ckpt
+2026-04-02 12:11:52,406 - tensorflow - INFO - [32450] | gnorm 0.30 lr 0.000022 | loss 0.84 | pplx    2.31, bpc  1.2088
+2026-04-02 12:12:05,523 - tensorflow - INFO - [32500] | gnorm 0.30 lr 0.000022 | loss 0.85 | pplx    2.35, bpc  1.2332
+2026-04-02 12:12:18,698 - tensorflow - INFO - [32550] | gnorm 0.31 lr 0.000022 | loss 0.85 | pplx    2.35, bpc  1.2323
+2026-04-02 12:12:31,755 - tensorflow - INFO - [32600] | gnorm 0.31 lr 0.000021 | loss 0.85 | pplx    2.34, bpc  1.2264
+2026-04-02 12:12:44,934 - tensorflow - INFO - [32650] | gnorm 0.31 lr 0.000021 | loss 0.84 | pplx    2.32, bpc  1.2160
+2026-04-02 12:12:58,102 - tensorflow - INFO - [32700] | gnorm 0.32 lr 0.000021 | loss 0.82 | pplx    2.27, bpc  1.1800
+2026-04-02 12:13:11,216 - tensorflow - INFO - [32750] | gnorm 0.33 lr 0.000021 | loss 0.84 | pplx    2.32, bpc  1.2159
+2026-04-02 12:13:24,285 - tensorflow - INFO - [32800] | gnorm 0.32 lr 0.000020 | loss 0.83 | pplx    2.29, bpc  1.1943
+2026-04-02 12:13:34,161 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_32800.ckpt
+2026-04-02 12:13:47,270 - tensorflow - INFO - [32850] | gnorm 0.32 lr 0.000020 | loss 0.85 | pplx    2.34, bpc  1.2291
+2026-04-02 12:14:00,394 - tensorflow - INFO - [32900] | gnorm 0.32 lr 0.000020 | loss 0.86 | pplx    2.36, bpc  1.2361
+2026-04-02 12:14:13,534 - tensorflow - INFO - [32950] | gnorm 0.30 lr 0.000020 | loss 0.85 | pplx    2.33, bpc  1.2233
+2026-04-02 12:14:26,619 - tensorflow - INFO - [33000] | gnorm 0.33 lr 0.000019 | loss 0.86 | pplx    2.35, bpc  1.2338
+2026-04-02 12:14:39,735 - tensorflow - INFO - [33050] | gnorm 0.32 lr 0.000019 | loss 0.84 | pplx    2.31, bpc  1.2065
+2026-04-02 12:14:52,859 - tensorflow - INFO - [33100] | gnorm 0.34 lr 0.000019 | loss 0.85 | pplx    2.35, bpc  1.2319
+2026-04-02 12:15:05,973 - tensorflow - INFO - [33150] | gnorm 0.30 lr 0.000019 | loss 0.89 | pplx    2.43, bpc  1.2782
+2026-04-02 12:15:19,135 - tensorflow - INFO - [33200] | gnorm 0.33 lr 0.000018 | loss 0.84 | pplx    2.32, bpc  1.2159
+2026-04-02 12:15:21,210 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_33200.ckpt
+2026-04-02 12:15:34,331 - tensorflow - INFO - [33250] | gnorm 0.31 lr 0.000018 | loss 0.84 | pplx    2.31, bpc  1.2107
+2026-04-02 12:15:47,524 - tensorflow - INFO - [33300] | gnorm 0.33 lr 0.000018 | loss 0.82 | pplx    2.26, bpc  1.1793
+2026-04-02 12:16:00,653 - tensorflow - INFO - [33350] | gnorm 0.32 lr 0.000018 | loss 0.84 | pplx    2.33, bpc  1.2187
+2026-04-02 12:16:13,781 - tensorflow - INFO - [33400] | gnorm 0.31 lr 0.000017 | loss 0.85 | pplx    2.35, bpc  1.2321
+2026-04-02 12:16:26,876 - tensorflow - INFO - [33450] | gnorm 0.30 lr 0.000017 | loss 0.89 | pplx    2.43, bpc  1.2824
+2026-04-02 12:16:40,007 - tensorflow - INFO - [33500] | gnorm 0.30 lr 0.000017 | loss 0.87 | pplx    2.38, bpc  1.2516
+2026-04-02 12:16:53,103 - tensorflow - INFO - [33550] | gnorm 0.31 lr 0.000017 | loss 0.85 | pplx    2.35, bpc  1.2318
+2026-04-02 12:17:06,271 - tensorflow - INFO - [33600] | gnorm 0.33 lr 0.000016 | loss 0.87 | pplx    2.38, bpc  1.2481
+2026-04-02 12:17:12,416 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_33600.ckpt
+2026-04-02 12:17:25,503 - tensorflow - INFO - [33650] | gnorm 0.30 lr 0.000016 | loss 0.84 | pplx    2.32, bpc  1.2121
+2026-04-02 12:17:38,628 - tensorflow - INFO - [33700] | gnorm 0.33 lr 0.000016 | loss 0.83 | pplx    2.29, bpc  1.1936
+2026-04-02 12:17:51,745 - tensorflow - INFO - [33750] | gnorm 0.31 lr 0.000016 | loss 0.83 | pplx    2.29, bpc  1.1969
+2026-04-02 12:18:04,835 - tensorflow - INFO - [33800] | gnorm 0.33 lr 0.000015 | loss 0.85 | pplx    2.34, bpc  1.2286
+2026-04-02 12:18:17,959 - tensorflow - INFO - [33850] | gnorm 0.32 lr 0.000015 | loss 0.86 | pplx    2.36, bpc  1.2361
+2026-04-02 12:18:31,001 - tensorflow - INFO - [33900] | gnorm 0.32 lr 0.000015 | loss 0.82 | pplx    2.28, bpc  1.1877
+2026-04-02 12:18:44,017 - tensorflow - INFO - [33950] | gnorm 0.31 lr 0.000015 | loss 0.85 | pplx    2.33, bpc  1.2215
+2026-04-02 12:18:57,008 - tensorflow - INFO - [34000] | gnorm 0.32 lr 0.000015 | loss 0.86 | pplx    2.36, bpc  1.2365
+2026-04-02 12:19:02,760 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_34000.ckpt
+2026-04-02 12:19:15,728 - tensorflow - INFO - [34050] | gnorm 0.33 lr 0.000014 | loss 0.89 | pplx    2.45, bpc  1.2907
+2026-04-02 12:19:28,694 - tensorflow - INFO - [34100] | gnorm 0.31 lr 0.000014 | loss 0.86 | pplx    2.36, bpc  1.2390
+2026-04-02 12:19:41,686 - tensorflow - INFO - [34150] | gnorm 0.32 lr 0.000014 | loss 0.87 | pplx    2.40, bpc  1.2612
+2026-04-02 12:19:54,654 - tensorflow - INFO - [34200] | gnorm 0.32 lr 0.000014 | loss 0.84 | pplx    2.31, bpc  1.2065
+2026-04-02 12:20:07,659 - tensorflow - INFO - [34250] | gnorm 0.32 lr 0.000013 | loss 0.85 | pplx    2.33, bpc  1.2234
+2026-04-02 12:20:20,660 - tensorflow - INFO - [34300] | gnorm 0.32 lr 0.000013 | loss 0.87 | pplx    2.39, bpc  1.2591
+2026-04-02 12:20:33,680 - tensorflow - INFO - [34350] | gnorm 0.33 lr 0.000013 | loss 0.86 | pplx    2.37, bpc  1.2475
+2026-04-02 12:20:46,697 - tensorflow - INFO - [34400] | gnorm 0.31 lr 0.000013 | loss 0.89 | pplx    2.43, bpc  1.2795
+2026-04-02 12:20:50,523 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_34400.ckpt
+2026-04-02 12:21:03,525 - tensorflow - INFO - [34450] | gnorm 0.31 lr 0.000013 | loss 0.85 | pplx    2.35, bpc  1.2331
+2026-04-02 12:21:16,523 - tensorflow - INFO - [34500] | gnorm 0.31 lr 0.000012 | loss 0.85 | pplx    2.33, bpc  1.2210
+2026-04-02 12:21:29,510 - tensorflow - INFO - [34550] | gnorm 0.34 lr 0.000012 | loss 0.86 | pplx    2.37, bpc  1.2437
+2026-04-02 12:21:42,531 - tensorflow - INFO - [34600] | gnorm 0.32 lr 0.000012 | loss 0.84 | pplx    2.31, bpc  1.2068
+2026-04-02 12:21:55,521 - tensorflow - INFO - [34650] | gnorm 0.31 lr 0.000012 | loss 0.85 | pplx    2.34, bpc  1.2279
+2026-04-02 12:22:08,548 - tensorflow - INFO - [34700] | gnorm 0.31 lr 0.000012 | loss 0.83 | pplx    2.29, bpc  1.1972
+2026-04-02 12:22:21,542 - tensorflow - INFO - [34750] | gnorm 0.31 lr 0.000011 | loss 0.83 | pplx    2.30, bpc  1.2021
+2026-04-02 12:22:34,561 - tensorflow - INFO - [34800] | gnorm 0.31 lr 0.000011 | loss 0.82 | pplx    2.28, bpc  1.1880
+2026-04-02 12:22:45,122 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_34800.ckpt
+2026-04-02 12:22:58,117 - tensorflow - INFO - [34850] | gnorm 0.31 lr 0.000011 | loss 0.82 | pplx    2.27, bpc  1.1811
+2026-04-02 12:23:11,059 - tensorflow - INFO - [34900] | gnorm 0.30 lr 0.000011 | loss 0.86 | pplx    2.37, bpc  1.2429
+2026-04-02 12:23:24,039 - tensorflow - INFO - [34950] | gnorm 0.30 lr 0.000011 | loss 0.83 | pplx    2.30, bpc  1.1990
+2026-04-02 12:23:37,000 - tensorflow - INFO - [35000] | gnorm 0.33 lr 0.000010 | loss 0.85 | pplx    2.33, bpc  1.2217
+2026-04-02 12:23:49,934 - tensorflow - INFO - [35050] | gnorm 0.31 lr 0.000010 | loss 0.86 | pplx    2.36, bpc  1.2389
+2026-04-02 12:24:02,908 - tensorflow - INFO - [35100] | gnorm 0.31 lr 0.000010 | loss 0.89 | pplx    2.44, bpc  1.2872
+2026-04-02 12:24:15,894 - tensorflow - INFO - [35150] | gnorm 0.34 lr 0.000010 | loss 0.85 | pplx    2.34, bpc  1.2236
+2026-04-02 12:24:28,878 - tensorflow - INFO - [35200] | gnorm 0.30 lr 0.000010 | loss 0.86 | pplx    2.37, bpc  1.2437
+2026-04-02 12:24:32,369 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_35200.ckpt
+2026-04-02 12:24:45,366 - tensorflow - INFO - [35250] | gnorm 0.33 lr 0.000010 | loss 0.87 | pplx    2.38, bpc  1.2523
+2026-04-02 12:24:58,333 - tensorflow - INFO - [35300] | gnorm 0.33 lr 0.000009 | loss 0.84 | pplx    2.32, bpc  1.2154
+2026-04-02 12:25:11,315 - tensorflow - INFO - [35350] | gnorm 0.31 lr 0.000009 | loss 0.86 | pplx    2.37, bpc  1.2430
+2026-04-02 12:25:24,294 - tensorflow - INFO - [35400] | gnorm 0.31 lr 0.000009 | loss 0.85 | pplx    2.33, bpc  1.2217
+2026-04-02 12:25:37,246 - tensorflow - INFO - [35450] | gnorm 0.34 lr 0.000009 | loss 0.89 | pplx    2.44, bpc  1.2880
+2026-04-02 12:25:50,234 - tensorflow - INFO - [35500] | gnorm 0.33 lr 0.000009 | loss 0.89 | pplx    2.42, bpc  1.2770
+2026-04-02 12:26:03,191 - tensorflow - INFO - [35550] | gnorm 0.29 lr 0.000009 | loss 0.89 | pplx    2.44, bpc  1.2840
+2026-04-02 12:26:16,150 - tensorflow - INFO - [35600] | gnorm 0.30 lr 0.000008 | loss 0.87 | pplx    2.39, bpc  1.2583
+2026-04-02 12:26:24,586 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_35600.ckpt
+2026-04-02 12:26:37,569 - tensorflow - INFO - [35650] | gnorm 0.32 lr 0.000008 | loss 0.85 | pplx    2.34, bpc  1.2242
+2026-04-02 12:26:50,564 - tensorflow - INFO - [35700] | gnorm 0.32 lr 0.000008 | loss 0.88 | pplx    2.41, bpc  1.2701
+2026-04-02 12:27:03,570 - tensorflow - INFO - [35750] | gnorm 0.32 lr 0.000008 | loss 0.89 | pplx    2.44, bpc  1.2841
+2026-04-02 12:27:16,546 - tensorflow - INFO - [35800] | gnorm 0.33 lr 0.000008 | loss 0.86 | pplx    2.36, bpc  1.2365
+2026-04-02 12:27:29,518 - tensorflow - INFO - [35850] | gnorm 0.31 lr 0.000008 | loss 0.87 | pplx    2.38, bpc  1.2516
+2026-04-02 12:27:42,473 - tensorflow - INFO - [35900] | gnorm 0.32 lr 0.000007 | loss 0.83 | pplx    2.30, bpc  1.2000
+2026-04-02 12:27:55,424 - tensorflow - INFO - [35950] | gnorm 0.32 lr 0.000007 | loss 0.83 | pplx    2.29, bpc  1.1975
+2026-04-02 12:28:08,415 - tensorflow - INFO - [36000] | gnorm 0.32 lr 0.000007 | loss 0.86 | pplx    2.36, bpc  1.2372
+2026-04-02 12:28:13,266 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_36000.ckpt
+2026-04-02 12:28:26,239 - tensorflow - INFO - [36050] | gnorm 0.33 lr 0.000007 | loss 0.81 | pplx    2.25, bpc  1.1697
+2026-04-02 12:28:39,213 - tensorflow - INFO - [36100] | gnorm 0.32 lr 0.000007 | loss 0.84 | pplx    2.31, bpc  1.2067
+2026-04-02 12:28:52,183 - tensorflow - INFO - [36150] | gnorm 0.33 lr 0.000007 | loss 0.83 | pplx    2.29, bpc  1.1927
+2026-04-02 12:29:05,134 - tensorflow - INFO - [36200] | gnorm 0.31 lr 0.000007 | loss 0.86 | pplx    2.35, bpc  1.2346
+2026-04-02 12:29:17,927 - tensorflow - INFO - [36250] | gnorm 0.32 lr 0.000006 | loss 0.85 | pplx    2.35, bpc  1.2327
+2026-04-02 12:29:30,878 - tensorflow - INFO - [36300] | gnorm 0.31 lr 0.000006 | loss 0.87 | pplx    2.38, bpc  1.2532
+2026-04-02 12:29:43,851 - tensorflow - INFO - [36350] | gnorm 0.33 lr 0.000006 | loss 0.86 | pplx    2.35, bpc  1.2353
+2026-04-02 12:29:56,815 - tensorflow - INFO - [36400] | gnorm 0.31 lr 0.000006 | loss 0.83 | pplx    2.29, bpc  1.1952
+2026-04-02 12:29:59,596 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_36400.ckpt
+2026-04-02 12:30:12,561 - tensorflow - INFO - [36450] | gnorm 0.30 lr 0.000006 | loss 0.83 | pplx    2.28, bpc  1.1913
+2026-04-02 12:30:25,558 - tensorflow - INFO - [36500] | gnorm 0.29 lr 0.000006 | loss 0.81 | pplx    2.26, bpc  1.1735
+2026-04-02 12:30:38,519 - tensorflow - INFO - [36550] | gnorm 0.32 lr 0.000006 | loss 0.81 | pplx    2.25, bpc  1.1671
+2026-04-02 12:30:51,527 - tensorflow - INFO - [36600] | gnorm 0.32 lr 0.000005 | loss 0.83 | pplx    2.30, bpc  1.2001
+2026-04-02 12:31:04,533 - tensorflow - INFO - [36650] | gnorm 0.35 lr 0.000005 | loss 0.83 | pplx    2.29, bpc  1.1922
+2026-04-02 12:31:17,519 - tensorflow - INFO - [36700] | gnorm 0.33 lr 0.000005 | loss 0.86 | pplx    2.37, bpc  1.2446
+2026-04-02 12:31:30,463 - tensorflow - INFO - [36750] | gnorm 0.31 lr 0.000005 | loss 0.85 | pplx    2.33, bpc  1.2195
+2026-04-02 12:31:43,415 - tensorflow - INFO - [36800] | gnorm 0.31 lr 0.000005 | loss 0.84 | pplx    2.31, bpc  1.2095
+2026-04-02 12:31:46,816 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_36800.ckpt
+2026-04-02 12:31:59,827 - tensorflow - INFO - [36850] | gnorm 0.33 lr 0.000005 | loss 0.84 | pplx    2.31, bpc  1.2090
+2026-04-02 12:32:12,775 - tensorflow - INFO - [36900] | gnorm 0.32 lr 0.000005 | loss 0.82 | pplx    2.28, bpc  1.1864
+2026-04-02 12:32:25,727 - tensorflow - INFO - [36950] | gnorm 0.30 lr 0.000005 | loss 0.80 | pplx    2.22, bpc  1.1480
+2026-04-02 12:32:38,701 - tensorflow - INFO - [37000] | gnorm 0.32 lr 0.000004 | loss 0.83 | pplx    2.29, bpc  1.1966
+2026-04-02 12:32:51,693 - tensorflow - INFO - [37050] | gnorm 0.33 lr 0.000004 | loss 0.85 | pplx    2.35, bpc  1.2307
+2026-04-02 12:33:04,640 - tensorflow - INFO - [37100] | gnorm 0.31 lr 0.000004 | loss 0.83 | pplx    2.28, bpc  1.1912
+2026-04-02 12:33:17,589 - tensorflow - INFO - [37150] | gnorm 0.31 lr 0.000004 | loss 0.83 | pplx    2.29, bpc  1.1979
+2026-04-02 12:33:30,544 - tensorflow - INFO - [37200] | gnorm 0.32 lr 0.000004 | loss 0.83 | pplx    2.30, bpc  1.1994
+2026-04-02 12:33:33,643 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_37200.ckpt
+2026-04-02 12:33:46,630 - tensorflow - INFO - [37250] | gnorm 0.31 lr 0.000004 | loss 0.83 | pplx    2.29, bpc  1.1972
+2026-04-02 12:33:59,597 - tensorflow - INFO - [37300] | gnorm 0.34 lr 0.000004 | loss 0.81 | pplx    2.26, bpc  1.1744
+2026-04-02 12:34:12,558 - tensorflow - INFO - [37350] | gnorm 0.32 lr 0.000004 | loss 0.83 | pplx    2.30, bpc  1.2021
+2026-04-02 12:34:25,543 - tensorflow - INFO - [37400] | gnorm 0.29 lr 0.000004 | loss 0.81 | pplx    2.25, bpc  1.1729
+2026-04-02 12:34:38,547 - tensorflow - INFO - [37450] | gnorm 0.31 lr 0.000003 | loss 0.81 | pplx    2.24, bpc  1.1643
+2026-04-02 12:34:51,511 - tensorflow - INFO - [37500] | gnorm 0.31 lr 0.000003 | loss 0.82 | pplx    2.27, bpc  1.1806
+2026-04-02 12:35:04,525 - tensorflow - INFO - [37550] | gnorm 0.34 lr 0.000003 | loss 0.84 | pplx    2.33, bpc  1.2176
+2026-04-02 12:35:17,521 - tensorflow - INFO - [37600] | gnorm 0.32 lr 0.000003 | loss 0.80 | pplx    2.22, bpc  1.1537
+2026-04-02 12:35:18,810 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_37600.ckpt
+2026-04-02 12:35:31,778 - tensorflow - INFO - [37650] | gnorm 0.31 lr 0.000003 | loss 0.82 | pplx    2.28, bpc  1.1862
+2026-04-02 12:35:44,756 - tensorflow - INFO - [37700] | gnorm 0.32 lr 0.000003 | loss 0.81 | pplx    2.24, bpc  1.1660
+2026-04-02 12:35:57,713 - tensorflow - INFO - [37750] | gnorm 0.31 lr 0.000003 | loss 0.82 | pplx    2.27, bpc  1.1856
+2026-04-02 12:36:10,716 - tensorflow - INFO - [37800] | gnorm 0.31 lr 0.000003 | loss 0.84 | pplx    2.32, bpc  1.2121
+2026-04-02 12:36:23,677 - tensorflow - INFO - [37850] | gnorm 0.31 lr 0.000003 | loss 0.83 | pplx    2.30, bpc  1.2002
+2026-04-02 12:36:36,615 - tensorflow - INFO - [37900] | gnorm 0.31 lr 0.000003 | loss 0.81 | pplx    2.25, bpc  1.1729
+2026-04-02 12:36:49,589 - tensorflow - INFO - [37950] | gnorm 0.31 lr 0.000003 | loss 0.85 | pplx    2.33, bpc  1.2229
+2026-04-02 12:37:02,531 - tensorflow - INFO - [38000] | gnorm 0.30 lr 0.000003 | loss 0.81 | pplx    2.25, bpc  1.1730
+2026-04-02 12:37:05,871 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_38000.ckpt
+2026-04-02 12:37:18,856 - tensorflow - INFO - [38050] | gnorm 0.32 lr 0.000002 | loss 0.83 | pplx    2.28, bpc  1.1906
+2026-04-02 12:37:31,848 - tensorflow - INFO - [38100] | gnorm 0.32 lr 0.000002 | loss 0.86 | pplx    2.36, bpc  1.2407
+2026-04-02 12:37:44,810 - tensorflow - INFO - [38150] | gnorm 0.32 lr 0.000002 | loss 0.89 | pplx    2.43, bpc  1.2822
+2026-04-02 12:37:57,799 - tensorflow - INFO - [38200] | gnorm 0.31 lr 0.000002 | loss 0.86 | pplx    2.36, bpc  1.2376
+2026-04-02 12:38:10,784 - tensorflow - INFO - [38250] | gnorm 0.31 lr 0.000002 | loss 0.89 | pplx    2.44, bpc  1.2843
+2026-04-02 12:38:23,762 - tensorflow - INFO - [38300] | gnorm 0.32 lr 0.000002 | loss 0.83 | pplx    2.29, bpc  1.1961
+2026-04-02 12:38:36,757 - tensorflow - INFO - [38350] | gnorm 0.31 lr 0.000002 | loss 0.83 | pplx    2.29, bpc  1.1952
+2026-04-02 12:38:49,690 - tensorflow - INFO - [38400] | gnorm 0.30 lr 0.000002 | loss 0.84 | pplx    2.33, bpc  1.2185
+2026-04-02 12:38:50,919 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_38400.ckpt
+2026-04-02 12:39:03,918 - tensorflow - INFO - [38450] | gnorm 0.30 lr 0.000002 | loss 0.84 | pplx    2.32, bpc  1.2110
+2026-04-02 12:39:16,915 - tensorflow - INFO - [38500] | gnorm 0.31 lr 0.000002 | loss 0.84 | pplx    2.32, bpc  1.2169
+2026-04-02 12:39:29,986 - tensorflow - INFO - [38550] | gnorm 0.32 lr 0.000002 | loss 0.84 | pplx    2.32, bpc  1.2133
+2026-04-02 12:39:42,935 - tensorflow - INFO - [38600] | gnorm 0.33 lr 0.000002 | loss 0.82 | pplx    2.28, bpc  1.1892
+2026-04-02 12:39:55,911 - tensorflow - INFO - [38650] | gnorm 0.32 lr 0.000002 | loss 0.86 | pplx    2.36, bpc  1.2370
+2026-04-02 12:40:08,874 - tensorflow - INFO - [38700] | gnorm 0.32 lr 0.000002 | loss 0.83 | pplx    2.29, bpc  1.1983
+2026-04-02 12:40:21,842 - tensorflow - INFO - [38750] | gnorm 0.32 lr 0.000002 | loss 0.87 | pplx    2.38, bpc  1.2516
+2026-04-02 12:40:34,812 - tensorflow - INFO - [38800] | gnorm 0.32 lr 0.000002 | loss 0.86 | pplx    2.36, bpc  1.2391
+2026-04-02 12:40:41,563 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_38800.ckpt
+2026-04-02 12:40:54,576 - tensorflow - INFO - [38850] | gnorm 0.31 lr 0.000002 | loss 0.85 | pplx    2.34, bpc  1.2243
+2026-04-02 12:41:07,614 - tensorflow - INFO - [38900] | gnorm 0.31 lr 0.000001 | loss 0.82 | pplx    2.27, bpc  1.1807
+2026-04-02 12:41:20,564 - tensorflow - INFO - [38950] | gnorm 0.33 lr 0.000001 | loss 0.81 | pplx    2.25, bpc  1.1686
+2026-04-02 12:41:33,558 - tensorflow - INFO - [39000] | gnorm 0.33 lr 0.000001 | loss 0.85 | pplx    2.35, bpc  1.2312
+2026-04-02 12:41:46,542 - tensorflow - INFO - [39050] | gnorm 0.32 lr 0.000001 | loss 0.85 | pplx    2.35, bpc  1.2312
+2026-04-02 12:41:59,511 - tensorflow - INFO - [39100] | gnorm 0.31 lr 0.000001 | loss 0.83 | pplx    2.28, bpc  1.1921
+2026-04-02 12:42:12,502 - tensorflow - INFO - [39150] | gnorm 0.33 lr 0.000001 | loss 0.83 | pplx    2.30, bpc  1.1990
+2026-04-02 12:42:25,541 - tensorflow - INFO - [39200] | gnorm 0.31 lr 0.000001 | loss 0.84 | pplx    2.31, bpc  1.2058
+2026-04-02 12:42:32,442 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_39200.ckpt
+2026-04-02 12:42:45,411 - tensorflow - INFO - [39250] | gnorm 0.30 lr 0.000001 | loss 0.82 | pplx    2.27, bpc  1.1842
+2026-04-02 12:42:58,392 - tensorflow - INFO - [39300] | gnorm 0.31 lr 0.000001 | loss 0.85 | pplx    2.34, bpc  1.2291
+2026-04-02 12:43:11,383 - tensorflow - INFO - [39350] | gnorm 0.33 lr 0.000001 | loss 0.84 | pplx    2.31, bpc  1.2062
+2026-04-02 12:43:24,351 - tensorflow - INFO - [39400] | gnorm 0.32 lr 0.000001 | loss 0.84 | pplx    2.33, bpc  1.2178
+2026-04-02 12:43:37,350 - tensorflow - INFO - [39450] | gnorm 0.31 lr 0.000001 | loss 0.83 | pplx    2.30, bpc  1.2009
+2026-04-02 12:43:50,360 - tensorflow - INFO - [39500] | gnorm 0.32 lr 0.000001 | loss 0.79 | pplx    2.20, bpc  1.1346
+2026-04-02 12:44:03,364 - tensorflow - INFO - [39550] | gnorm 0.31 lr 0.000001 | loss 0.86 | pplx    2.36, bpc  1.2359
+2026-04-02 12:44:16,341 - tensorflow - INFO - [39600] | gnorm 0.30 lr 0.000001 | loss 0.84 | pplx    2.33, bpc  1.2181
+2026-04-02 12:44:24,404 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_39600.ckpt
+2026-04-02 12:44:37,357 - tensorflow - INFO - [39650] | gnorm 0.33 lr 0.000001 | loss 0.84 | pplx    2.32, bpc  1.2124
+2026-04-02 12:44:50,339 - tensorflow - INFO - [39700] | gnorm 0.31 lr 0.000001 | loss 0.83 | pplx    2.29, bpc  1.1947
+2026-04-02 12:45:03,362 - tensorflow - INFO - [39750] | gnorm 0.31 lr 0.000001 | loss 0.84 | pplx    2.32, bpc  1.2163
+2026-04-02 12:45:16,349 - tensorflow - INFO - [39800] | gnorm 0.31 lr 0.000001 | loss 0.84 | pplx    2.32, bpc  1.2159
+2026-04-02 12:45:29,375 - tensorflow - INFO - [39850] | gnorm 0.32 lr 0.000001 | loss 0.84 | pplx    2.33, bpc  1.2190
+2026-04-02 12:45:42,353 - tensorflow - INFO - [39900] | gnorm 0.31 lr 0.000001 | loss 0.83 | pplx    2.29, bpc  1.1983
+2026-04-02 12:45:55,336 - tensorflow - INFO - [39950] | gnorm 0.33 lr 0.000001 | loss 0.80 | pplx    2.23, bpc  1.1568
+2026-04-02 12:46:08,365 - tensorflow - INFO - [40000] | gnorm 0.31 lr 0.000001 | loss 0.84 | pplx    2.31, bpc  1.2049
+2026-04-02 12:46:11,445 - tensorflow - INFO - Model saved in path: EXP-enwik8/model_40000.ckpt
