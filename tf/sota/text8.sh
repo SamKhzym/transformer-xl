@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Data
-DATA_ROOT=./
+DATA_ROOT=/transformer-xl/transformer-xl/tf/data
 DATA_DIR=${DATA_ROOT}/pretrained_xl/tf_text8/data
 MODEL_DIR=${DATA_ROOT}/pretrained_xl/tf_text8/model
 
@@ -20,7 +20,7 @@ TEST_CLAMP_LEN=1000
 
 TEST_CKPT_PATH=${MODEL_DIR}/model.ckpt-0
 TEST_BSZ=16
-TEST_NUM_CORE=2
+TEST_NUM_CORE=1
 
 
 echo 'Preprocess test set...'

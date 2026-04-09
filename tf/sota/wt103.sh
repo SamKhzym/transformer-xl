@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Data
-DATA_ROOT=./
+DATA_ROOT=/transformer-xl/transformer-xl/tf/data
 DATA_DIR=${DATA_ROOT}/pretrained_xl/tf_wt103/data
 MODEL_DIR=${DATA_ROOT}/pretrained_xl/tf_wt103/model
 
@@ -19,7 +19,7 @@ TGT_LEN=256
 MEM_LEN=256
 
 BSZ=16
-NUM_CORE=2
+NUM_CORE=1
 
 # Testing
 TEST_TGT_LEN=128

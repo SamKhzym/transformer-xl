@@ -16,6 +16,8 @@ import tensorflow as tf
 import model
 import data_utils
 
+tf.disable_eager_execution()
+
 from gpu_utils import assign_to_gpu, average_grads_and_vars
 
 import numpy as np
@@ -480,6 +482,11 @@ def evaluate(n_token, cutoffs, ps_device):
       loss_np, tower_mems_np, cnt_np = fetched[:3]
       total_loss += loss_np * cnt_np
       total_cnt += cnt_np
+      
+      avg_loss = total_loss / total_cnt
+      
+      tf.logging.info("| loss {:.2f} | pplx {:>7.2f}, bpc {:>7.4f}".format(
+        avg_loss, math.exp(avg_loss), avg_loss / math.log(2)))
 
     avg_loss = total_loss / total_cnt
     tf.compat.v1.logging.info("| loss {:.2f} | pplx {:>7.2f}, bpc {:>7.4f}".format(
