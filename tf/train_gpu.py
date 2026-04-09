@@ -11,7 +11,7 @@ import absl.logging as _logging  # pylint: disable=unused-import
 
 # Force the use of legacy Keras to prevent the LazyLoader loop
 os.environ['TF_USE_LEGACY_KERAS'] = '1'
-
+os.environ['TF_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 import model
 import data_utils
@@ -416,7 +416,7 @@ def evaluate(n_token, cutoffs, ps_device):
   tower_mems, tower_losses, tower_new_mems = [], [], []
 
   for i in range(FLAGS.num_core_per_host):
-    with tf.device(assign_to_gpu(i, ps_device)), \
+    with tf.device(f"/gpu:{i}"), \
         tf.compat.v1.variable_scope(tf.compat.v1.get_variable_scope(), reuse=tf.compat.v1.AUTO_REUSE):
 
       mems_i = [tf.compat.v1.placeholder(tf.float32,

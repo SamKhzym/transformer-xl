@@ -1,1 +1,6 @@
+**.log
+**.ckpt.**
+**/checkpoint
+**/__pycache__/**
+data/**
 **/out/**
